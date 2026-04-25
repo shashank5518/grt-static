@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+:root {
+  --brand-900: #0b1220;
+  --brand-800: #111b33;
+  --brand-700: #152243;
+  --accent: #2f6bff;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: rgba(47, 107, 255, 0.22);
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system,
+      Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  }
+}
+
+@layer utilities {
+  .container-px {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+  .brand-gradient {
+    background-image: radial-gradient(
+        1200px 600px at 20% 10%,
+        rgba(47, 107, 255, 0.18),
+        transparent 55%
+      ),
+      radial-gradient(
+        900px 500px at 80% 20%,
+        rgba(17, 27, 51, 0.25),
+        transparent 55%
+      );
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 25s linear infinite;
+}
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+.mask-fade {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 15%,
+    black 85%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 15%,
+    black 85%,
+    transparent 100%
+  );
+}
+
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-carousel {
+  animation: carousel 25s linear infinite;
+  will-change: transform;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+/* .no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+} */

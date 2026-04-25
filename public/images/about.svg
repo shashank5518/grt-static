@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Growth Realtech — modern building illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2f6bff" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#0b1220" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <circle cx="250" cy="220" r="220" fill="#2f6bff" opacity="0.12"/>
+  <circle cx="980" cy="260" r="260" fill="#0b1220" opacity="0.06"/>
+
+  <g transform="translate(250 150)">
+    <rect x="0" y="0" width="520" height="640" rx="28" fill="#ffffff" stroke="#cbd5e1" stroke-width="6"/>
+    <rect x="40" y="50" width="440" height="540" rx="22" fill="url(#glass)"/>
+    <g fill="#ffffff" opacity="0.7">
+      <rect x="70" y="90" width="110" height="70" rx="14"/>
+      <rect x="210" y="90" width="110" height="70" rx="14"/>
+      <rect x="350" y="90" width="110" height="70" rx="14"/>
+      <rect x="70" y="190" width="110" height="70" rx="14"/>
+      <rect x="210" y="190" width="110" height="70" rx="14"/>
+      <rect x="350" y="190" width="110" height="70" rx="14"/>
+      <rect x="70" y="290" width="110" height="70" rx="14"/>
+      <rect x="210" y="290" width="110" height="70" rx="14"/>
+      <rect x="350" y="290" width="110" height="70" rx="14"/>
+      <rect x="70" y="390" width="110" height="70" rx="14"/>
+      <rect x="210" y="390" width="110" height="70" rx="14"/>
+      <rect x="350" y="390" width="110" height="70" rx="14"/>
+    </g>
+    <rect x="180" y="520" width="160" height="120" rx="22" fill="#0b1220" opacity="0.18"/>
+  </g>
+
+  <rect y="780" width="1200" height="120" fill="#0b1220" opacity="0.06"/>
+  <text x="780" y="868" fill="#0b1220" fill-opacity="0.45" font-family="system-ui, Segoe UI, sans-serif" font-size="22" font-weight="700" text-anchor="end">Growth Realtech</text>
+  <text x="780" y="894" fill="#0b1220" fill-opacity="0.3" font-family="system-ui, Segoe UI, sans-serif" font-size="12" font-weight="600" letter-spacing="0.35em" text-anchor="end">GRT</text>
+</svg>
+
