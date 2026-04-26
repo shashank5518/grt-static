@@ -128,7 +128,7 @@ useEffect(() => {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/70">
       <div className="mx-auto max-w-6xl container-px">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-[70px] md:h-[80px] items-center justify-between">
           <Link
             href="#home"
             className="flex items-center gap-2 ml-6 md:ml-10 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500/40"
