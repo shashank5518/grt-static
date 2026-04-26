@@ -25,14 +25,14 @@ export function ContactSection() {
               href="tel:+919999982787"
               className="flex items-center justify-between rounded-2xl bg-white px-5 py-4 text-sm font-semibold text-slate-900 shadow-sm transition hover:shadow-md"
             >
-              <span>Call: +91 99999 82787</span>
+              <span>Call Us</span>
               <span className="text-slate-500">Tap to call</span>
             </a>
             <a
               href="mailto:sales.growthrealtech@gmail.com"
               className="flex items-center justify-between rounded-2xl bg-white px-5 py-4 text-sm font-semibold text-slate-900 shadow-sm transition hover:shadow-md"
             >
-              <span>Email: sales.growthrealtech@gmail.com</span>
+              <span>Email Us</span>
               <span className="text-slate-500">Tap to email</span>
             </a>
             <a
@@ -41,7 +41,7 @@ export function ContactSection() {
               rel="noreferrer"
               className="flex items-center justify-between rounded-2xl bg-[color:var(--brand-900)] px-5 py-4 text-sm font-semibold text-white shadow-sm transition hover:bg-[color:var(--brand-800)]"
             >
-              <span>WhatsApp chat</span>
+              <span>WhatsApp Chat</span>
               <span className="text-white/70">Tap to open</span>
             </a>
           </div>
