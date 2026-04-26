@@ -9,6 +9,9 @@ const inter = Inter({
   display: "swap",
 });
 
+// ✅ When you have your domain, replace this with: "https://growthrealtech.com"
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://growthrealtech.vercel.app";
+
 const siteName = "Growth Realtech";
 const siteDescription =
   "Premium property advisory in Gurgaon. Site visits, investment guidance, and end-to-end support.";
@@ -19,16 +22,40 @@ export const metadata: Metadata = {
     template: `%s | ${siteName}`,
   },
   description: siteDescription,
-  metadataBase: new URL("https://example.com"),
+  metadataBase: new URL(SITE_URL),
   alternates: { canonical: "/" },
   openGraph: {
     title: `${siteName} | Premium Properties in Gurgaon`,
     description: siteDescription,
     type: "website",
+    url: SITE_URL,
+    siteName: siteName,
+    images: [
+      {
+        url: "/images/new-logo-white-transparent.png",
+        width: 1200,
+        height: 630,
+        alt: "Growth Realtech",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${siteName} | Premium Properties in Gurgaon`,
+    description: siteDescription,
+    images: ["/images/new-logo-white-transparent.png"],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/icon.png",
   },
 };
 
@@ -52,7 +79,7 @@ export default function RootLayout({
             alt="Growth Realtech"
             width={64}
             height={64}
-            className="opacity-[0.35] mix-blend-multiply"
+            className="opacity-[0.15] mix-blend-multiply"
           />
         </div>
       </body>
