@@ -181,13 +181,13 @@ useEffect(() => {
 
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="tel:+910000000000"
+              href="tel:+919999982787"
               className="inline-flex items-center justify-center rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-900 hover:bg-slate-50 transition"
             >
               Call
             </a>
             <a
-              href="https://wa.me/910000000000"
+              href="https://wa.me/919999982787"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center justify-center rounded-full bg-[color:var(--brand-900)] px-4 py-2 text-sm font-semibold text-white hover:bg-[color:var(--brand-800)] transition shadow-sm"
@@ -228,13 +228,13 @@ useEffect(() => {
               ))}
               <div className="mt-2 grid grid-cols-2 gap-2">
                 <a
-                  href="tel:+910000000000"
+                  href="tel:+919999982787"
                   className="inline-flex items-center justify-center rounded-xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 hover:bg-slate-50 transition"
                 >
                   Call Now
                 </a>
                 <a
-                  href="https://wa.me/910000000000"
+                  href="https://wa.me/919999982787"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center justify-center rounded-xl bg-[color:var(--brand-900)] px-4 py-3 text-sm font-semibold text-white hover:bg-[color:var(--brand-800)] transition"

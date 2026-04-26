@@ -19,7 +19,7 @@ export function Footer() {
             <p className="text-sm font-semibold text-slate-900">Contact</p>
             <div className="mt-3 space-y-2 text-sm text-slate-600">
               <a
-                href="tel:+910000000000"
+                href="tel:+919999982787"
                 className="block hover:text-slate-900"
               >
                 +91 99999 82787

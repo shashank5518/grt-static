@@ -11,18 +11,18 @@ const inter = Inter({
 
 const siteName = "Growth Realtech";
 const siteDescription =
-  "Premium property advisory in [AREA NAME]. Site visits, investment guidance, and end-to-end support.";
+  "Premium property advisory in Gurgaon. Site visits, investment guidance, and end-to-end support.";
 
 export const metadata: Metadata = {
   title: {
-    default: `${siteName} | Premium Properties in [AREA NAME]`,
+    default: `${siteName} | Premium Properties in Gurgaon`,
     template: `%s | ${siteName}`,
   },
   description: siteDescription,
   metadataBase: new URL("https://example.com"),
   alternates: { canonical: "/" },
   openGraph: {
-    title: `${siteName} | Premium Properties in [AREA NAME]`,
+    title: `${siteName} | Premium Properties in Gurgaon`,
     description: siteDescription,
     type: "website",
   },
