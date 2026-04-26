@@ -41,7 +41,7 @@ export function Hero() {
                   Call Now
                 </a>
                 <a
-                  href="https://wa.me/919999982787?text=Hi%20I%27m%20interested%20in%20properties%20in%20%5BAREA%20NAME%5D."
+                  href="https://wa.me/919999982787?text=Hi%20I%27m%20interested%20in%20properties%20in%20Gurgaon."
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex h-12 items-center justify-center rounded-full border border-white/20 bg-white/10 px-6 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white/30"
