@@ -18,7 +18,9 @@ export function Hero() {
       <div className="relative">
         <div className="mx-auto max-w-6xl container-px">
           <div className="py-20 sm:py-28 lg:py-32">
+            <div className="flex items-center justify-between gap-12">
             <div className="max-w-2xl">
+              
               <p className="inline-flex items-center rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs font-semibold tracking-wide text-white/90 backdrop-blur">
                 Trusted property consulting • Site visits • Investment guidance
               </p>
@@ -75,10 +77,26 @@ export function Hero() {
                 </div>
               </dl>
             </div>
+
+            {/* Right side logo */}
+            <div className="hidden lg:flex flex-shrink-0 items-center justify-center">
+              <div className="relative w-80 xl:w-96">
+                <div className="absolute inset-0 rounded-full bg-white/5 blur-3xl scale-125" />
+                <Image
+                  src="/images/new-logo-white-transparent.png"
+                  alt="Company Logo"
+                  width={384}
+                  height={384}
+                  className="relative drop-shadow-[0_0_80px_rgba(255,255,255,0.2)] opacity-90"
+                  priority
+                />
+              </div>
+            </div>
+
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
 }
-

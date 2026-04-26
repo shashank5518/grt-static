@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Image from "next/image";
 import "./globals.css";
 
 const inter = Inter({
@@ -40,6 +41,20 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-white text-slate-900">
         {children}
+
+        {/* Fixed watermark — bottom-left, non-interactive */}
+        <div
+          className="pointer-events-none fixed bottom-5 left-5 z-40 select-none"
+          aria-hidden="true"
+        >
+          <Image
+            src="/images/new-logo-transparent.png"
+            alt="Growth Realtech"
+            width={64}
+            height={64}
+            className="opacity-[0.35] mix-blend-multiply"
+          />
+        </div>
       </body>
     </html>
   );
