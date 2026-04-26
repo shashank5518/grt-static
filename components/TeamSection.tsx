@@ -36,12 +36,12 @@ export function TeamSection() {
       description="We’re responsive, detail-oriented, and focused on what’s best for your goals."
       className="bg-white"
     >
-    <div className="group max-w-[880px] mx-auto relative overflow-hidden mask-fade py-6">
+    <div className="group max-w-220 mx-auto relative overflow-hidden mask-fade py-6">
       <div className="flex gap-5 animate-carousel w-max group-hover:[animation-play-state:paused] items-stretch">
     {[...team, ...team].map((m, i) => (
       <div
         key={`${m.name}-${i}`}
-        className="flex-shrink-0 w-[280px] h-full"
+        className="shrink-0 w-70 h-full"
       >
         <TeamCard member={m} />
       </div>

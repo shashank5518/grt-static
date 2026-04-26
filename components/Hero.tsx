@@ -11,7 +11,7 @@ export function Hero() {
           priority
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-[color:var(--brand-900)]/70" />
+        <div className="absolute inset-0 bg-(--brand-900)/70" />
         <div className="absolute inset-0 brand-gradient opacity-70" />
       </div>
 
@@ -36,7 +36,7 @@ export function Hero() {
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
                 <a
                   href="tel:+919999982787"
-                  className="inline-flex h-12 items-center justify-center rounded-full bg-white px-6 text-sm font-semibold text-[color:var(--brand-900)] shadow-sm transition hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-white/40"
+                  className="inline-flex h-12 items-center justify-center rounded-full bg-white px-6 text-sm font-semibold text-(--brand-900) shadow-sm transition hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-white/40"
                 >
                   Call Now
                 </a>
@@ -79,7 +79,7 @@ export function Hero() {
             </div>
 
             {/* Right side logo */}
-            <div className="hidden lg:flex flex-shrink-0 items-center justify-center">
+            <div className="hidden lg:flex shrink-0 items-center justify-center">
               <div className="relative w-80 xl:w-96">
                 <div className="absolute inset-0 rounded-full bg-white/5 blur-3xl scale-125" />
                 <Image

@@ -5,7 +5,7 @@ export type Testimonial = {
 
 export function TestimonialCard({ t }: { t: Testimonial }) {
   return (
-    <article className="h-[220px] min-w-[280px] max-w-[280px] rounded-3xl border border-slate-200 bg-white p-6 shadow-sm flex flex-col justify-between">
+    <article className="h-55 min-w-70 max-w-70 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm flex flex-col justify-between">
       <p className="text-sm leading-6 text-slate-600 line-clamp-4">
         “{t.feedback}”
       </p>
