@@ -35,13 +35,13 @@ export function Hero() {
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
                 <a
-                  href="tel:+910000000000"
+                  href="tel:+919999982787"
                   className="inline-flex h-12 items-center justify-center rounded-full bg-white px-6 text-sm font-semibold text-[color:var(--brand-900)] shadow-sm transition hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-white/40"
                 >
                   Call Now
                 </a>
                 <a
-                  href="https://wa.me/910000000000?text=Hi%20I%27m%20interested%20in%20properties%20in%20%5BAREA%20NAME%5D."
+                  href="https://wa.me/919999982787?text=Hi%20I%27m%20interested%20in%20properties%20in%20%5BAREA%20NAME%5D."
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex h-12 items-center justify-center rounded-full border border-white/20 bg-white/10 px-6 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white/30"
