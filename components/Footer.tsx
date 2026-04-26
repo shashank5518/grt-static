@@ -25,10 +25,10 @@ export function Footer() {
                 +91 99999 82787
               </a>
               <a
-                href="mailto:hello@example.com"
+                href="mailto:sales.growthrealtech@gmail.com"
                 className="block hover:text-slate-900"
               >
-                hello@example.com
+                sales.growthrealtech@gmail.com
               </a>
               <p className="text-slate-600">
                 Mapsko Casa Bella, Sector-82, Gurgaon

@@ -29,10 +29,10 @@ export function ContactSection() {
               <span className="text-slate-500">Tap to call</span>
             </a>
             <a
-              href="mailto:hello@example.com"
+              href="mailto:sales.growthrealtech@gmail.com"
               className="flex items-center justify-between rounded-2xl bg-white px-5 py-4 text-sm font-semibold text-slate-900 shadow-sm transition hover:shadow-md"
             >
-              <span>Email: hello@example.com</span>
+              <span>Email: sales.growthrealtech@gmail.com</span>
               <span className="text-slate-500">Tap to email</span>
             </a>
             <a
