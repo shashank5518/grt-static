@@ -252,7 +252,7 @@ export function MasterPlanSection() {
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
         >
-          <div className="aspect-[4/3] w-full">
+          <div className="aspect-4/3 w-full">
             <div
               className="h-full w-full"
               style={{

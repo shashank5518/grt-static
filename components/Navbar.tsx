@@ -19,20 +19,20 @@ function MenuIcon({ open }: { open: boolean }) {
     <span className="relative block h-5 w-5">
       <span
         className={[
-          "absolute left-0 top-[2px] h-0.5 w-5 rounded bg-slate-900 transition",
-          open ? "translate-y-[8px] rotate-45" : "",
+          "absolute left-0 top-0.5 h-0.5 w-5 rounded bg-slate-900 transition",
+          open ? "translate-y-2 rotate-45" : "",
         ].join(" ")}
       />
       <span
         className={[
-          "absolute left-0 top-[9px] h-0.5 w-5 rounded bg-slate-900 transition",
+          "absolute left-0 top-2.25 h-0.5 w-5 rounded bg-slate-900 transition",
           open ? "opacity-0" : "opacity-100",
         ].join(" ")}
       />
       <span
         className={[
-          "absolute left-0 top-[16px] h-0.5 w-5 rounded bg-slate-900 transition",
-          open ? "-translate-y-[8px] -rotate-45" : "",
+          "absolute left-0 top-4 h-0.5 w-5 rounded bg-slate-900 transition",
+          open ? "-translate-y-2 -rotate-45" : "",
         ].join(" ")}
       />
     </span>
@@ -126,9 +126,9 @@ useEffect(() => {
 }, []);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/70">
+    <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur supports-backdrop-filter:bg-white/70">
       <div className="mx-auto max-w-6xl container-px">
-        <div className="flex h-[70px] md:h-[80px] items-center justify-between">
+        <div className="flex h-17.5 md:h-20 items-center justify-between">
           <Link
             href="#home"
             className="flex items-center gap-2 ml-6 md:ml-10 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500/40"
@@ -140,7 +140,7 @@ useEffect(() => {
   alt="Company Logo"
   width={400}
   height={110}
-  className="h-[65px] md:h-[75px] w-auto object-contain"
+  className="h-16.25 md:h-18.75 w-auto object-contain"
   priority
 />
           </Link>
@@ -148,7 +148,7 @@ useEffect(() => {
           <nav className="relative hidden items-center gap-7 md:flex">
   {/* Sliding indicator */}
   <span
-  className="absolute bottom-0 h-[2px] bg-[color:var(--brand-900)] transition-all duration-300 ease-in-out"
+  className="absolute bottom-0 h-0.5 bg-(--brand-900) transition-all duration-300 ease-in-out"
   style={{
     left: indicatorStyle.left,
     width: indicatorStyle.width,
@@ -170,7 +170,7 @@ useEffect(() => {
         {l.label}
         <span
           className={[
-            "absolute left-0 -bottom-1 h-[2px] w-full bg-[color:var(--brand-900)] transition-transform duration-300 origin-left",
+            "absolute left-0 -bottom-1 h-0.5 w-full bg-(--brand-900) transition-transform duration-300 origin-left",
             active === l.href ? "scale-x-100" : "scale-x-0",
           ].join(" ")}
         />
@@ -190,7 +190,7 @@ useEffect(() => {
               href="https://wa.me/919999982787"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-[color:var(--brand-900)] px-4 py-2 text-sm font-semibold text-white hover:bg-[color:var(--brand-800)] transition shadow-sm"
+              className="inline-flex items-center justify-center rounded-full bg-(--brand-900) px-4 py-2 text-sm font-semibold text-white hover:bg-(--brand-800) transition shadow-sm"
             >
               WhatsApp
             </a>
@@ -237,7 +237,7 @@ useEffect(() => {
                   href="https://wa.me/919999982787"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center justify-center rounded-xl bg-[color:var(--brand-900)] px-4 py-3 text-sm font-semibold text-white hover:bg-[color:var(--brand-800)] transition"
+                  className="inline-flex items-center justify-center rounded-xl bg-(--brand-900) px-4 py-3 text-sm font-semibold text-white hover:bg-(--brand-800) transition"
                 >
                   WhatsApp
                 </a>

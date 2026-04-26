@@ -39,7 +39,7 @@ export function ContactSection() {
               href="https://wa.me/919999982787"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center justify-between rounded-2xl bg-[color:var(--brand-900)] px-5 py-4 text-sm font-semibold text-white shadow-sm transition hover:bg-[color:var(--brand-800)]"
+              className="flex items-center justify-between rounded-2xl bg-(--brand-900) px-5 py-4 text-sm font-semibold text-white shadow-sm transition hover:bg-(--brand-800)"
             >
               <span>WhatsApp Chat</span>
               <span className="text-white/70">Tap to open</span>

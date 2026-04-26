@@ -69,8 +69,8 @@ export function AboutSection() {
         <div className="order-1 lg:order-2">
           <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <div className="absolute inset-0 brand-gradient opacity-70" />
-            <div className="relative aspect-[4/3]">
-              <div className="aspect-[4/3] w-full">
+            <div className="relative aspect-4/3">
+              <div className="aspect-4/3 w-full">
             <iframe
               title="Google Map"
               className="h-full w-full"

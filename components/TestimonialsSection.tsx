@@ -33,14 +33,14 @@ export function TestimonialsSection() {
       description="Real experiences from people who trusted us with their property decisions."
       className="bg-white"
     >
-      <div className="group max-w-[880px] mx-auto relative overflow-hidden mask-fade py-6">
+      <div className="group max-w-220 mx-auto relative overflow-hidden mask-fade py-6">
         
         <div className="flex gap-5 animate-carousel w-max group-hover:[animation-play-state:paused] items-stretch">
           
           {[...testimonials, ...testimonials].map((t, i) => (
             <div
               key={`${t.name}-${i}`}
-              className="flex-shrink-0 w-[280px]"
+              className="shrink-0 w-70"
             >
               <TestimonialCard t={t} />
             </div>

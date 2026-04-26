@@ -16,7 +16,7 @@ export function AreaSection() {
           </h3>
           <ul className="mt-4 space-y-3 text-sm leading-6 text-slate-700">
             <li className="flex gap-3">
-              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[color:var(--accent)]" />
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-(--accent)" />
               <span>
                 <span className="font-semibold text-slate-900">
                   Connectivity
@@ -26,14 +26,14 @@ export function AreaSection() {
               </span>
             </li>
             <li className="flex gap-3">
-              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[color:var(--accent)]" />
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-(--accent)" />
               <span>
                 <span className="font-semibold text-slate-900">Growth</span> –
                 consistent demand from end-users and long-term investors.
               </span>
             </li>
             <li className="flex gap-3">
-              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[color:var(--accent)]" />
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-(--accent)" />
               <span>
                 <span className="font-semibold text-slate-900">
                   Infrastructure
@@ -72,12 +72,12 @@ export function AreaSection() {
               href="https://www.google.com/maps"
               target="_blank"
               rel="noreferrer"
-              className="text-sm font-semibold text-[color:var(--accent)] hover:underline"
+              className="text-sm font-semibold text-(--accent) hover:underline"
             >
               Open in Google Maps
             </a>
           </div>
-          <div className="aspect-[4/3] w-full">
+          <div className="aspect-4/3 w-full">
             <iframe
               title="Google Map"
               className="h-full w-full"

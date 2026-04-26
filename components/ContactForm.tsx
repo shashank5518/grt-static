@@ -84,7 +84,7 @@ export function ContactForm() {
         </p>
         <button
           type="submit"
-          className="inline-flex h-12 items-center justify-center rounded-full bg-[color:var(--brand-900)] px-6 text-sm font-semibold text-white shadow-sm transition hover:bg-[color:var(--brand-800)] focus:outline-none focus:ring-4 focus:ring-blue-500/20"
+          className="inline-flex h-12 items-center justify-center rounded-full bg-(--brand-900) px-6 text-sm font-semibold text-white shadow-sm transition hover:bg-(--brand-800) focus:outline-none focus:ring-4 focus:ring-blue-500/20"
         >
           Get a Call Back
         </button>
