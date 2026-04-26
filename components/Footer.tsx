@@ -31,7 +31,7 @@ export function Footer() {
                 sales.growthrealtech@gmail.com
               </a>
               <p className="text-slate-600">
-                Mapsko Casa Bella, Sector-82, Gurgaon
+                AB2-104, Mapsko Casa Bella, Sector-82, Gurgaon
               </p>
             </div>
           </div>
