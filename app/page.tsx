@@ -8,6 +8,7 @@ import { TeamSection } from "@/components/TeamSection";
 import { VisionSection } from "@/components/VisionSection";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { MasterPlanSection } from "@/components/MasterPlanSection";
+import { TestimonialsSection } from "@/components/TestimonialsSection";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <AreaSection />
         <AboutSection />
         <TeamSection />
+        <TestimonialsSection />
         <VisionSection />
         <ContactSection />
         <MasterPlanSection />
