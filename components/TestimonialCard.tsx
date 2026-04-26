@@ -12,7 +12,18 @@ export function TestimonialCard({ t }: { t: Testimonial }) {
 
       <div className="mt-4">
         <p className="text-sm font-semibold text-slate-900">{t.name}</p>
-        <p className="text-xs text-slate-500">Verified Client</p>
+        <div className="flex items-center gap-1 mt-2">
+  <p className="text-xs text-slate-500 tracking-wide">
+    Verified Client
+  </p>
+  <span className="flex items-center justify-center h-4 w-4">
+    <img
+      src="/images/verification-badge.svg"
+      alt="verified badge"
+      className="h-4 w-4 object-contain"
+    />
+  </span>
+</div>
       </div>
     </article>
   );
