@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image"
 import { useEffect, useMemo, useState } from "react";
 
 const navLinks = [
@@ -130,16 +131,18 @@ useEffect(() => {
         <div className="flex h-16 items-center justify-between">
           <Link
             href="#home"
-            className="flex items-center gap-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500/40"
+            className="flex items-center gap-2 ml-6 md:ml-10 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500/40"
             onClick={close}
             aria-label={`${brand} home`}
           >
-            <span className="grid h-9 w-9 place-items-center rounded-xl bg-[color:var(--brand-900)] text-white shadow-sm">
-              GR
-            </span>
-            <span className="text-sm font-semibold tracking-tight text-slate-900">
-              {brand}
-            </span>
+            <Image 
+  src="/images/new-logo-transparent.png"
+  alt="Company Logo"
+  width={400}
+  height={110}
+  className="h-[65px] md:h-[75px] w-auto object-contain"
+  priority
+/>
           </Link>
 
           <nav className="relative hidden items-center gap-7 md:flex">
