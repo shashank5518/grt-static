@@ -68,7 +68,24 @@ const priceToShow =
 
   {/* Dark overlay */}
   <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/10 to-black/10" />
-
+  {/* Brokerage logo */}
+<div className="absolute top-3 right-3">
+  <div className="
+    relative flex h-11 w-11 items-center justify-center
+    rounded-2xl border border-white/10
+    bg-white/10
+    backdrop-blur-xl
+    shadow-lg
+  ">
+    <Image
+      src="/images/new-logo-white-transparent.png"
+      alt="Company Logo"
+      width={28}
+      height={28}
+      className="object-contain"
+    />
+  </div>
+</div>
   {/* Status tag */}
   <span
     className={`absolute top-3 left-3 inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold backdrop-blur-md ${property.tagColor}`}
