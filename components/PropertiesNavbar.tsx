@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function PropertiesNavbar() {
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200/50 bg-white/80 backdrop-blur supports-backdrop-filter:bg-white/70">
+    <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur supports-backdrop-filter:bg-white/70">
       <div className="mx-auto max-w-7xl px-8 md:px-14">
         <div className="relative flex h-17.5 md:h-20 items-center justify-between">
 
