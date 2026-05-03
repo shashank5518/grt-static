@@ -20,12 +20,47 @@ const tagOptions = ["All", "Ready to Move", "New Launch", "Under Construction"];
 export function PropertiesPage() {
   const [activeBhk, setActiveBhk] = useState(ALL);
   const [activeTag, setActiveTag] = useState(ALL);
+  const [sortBy, setSortBy] = useState("default");
+  const [sortOpen, setSortOpen] = useState(false);
 
-  const filtered = properties.filter((p) => {
+  const filtered = [...properties]
+  .filter((p) => {
     const bhkMatch =
-      activeBhk === ALL || p.configurations.some((c) => c.bhk === activeBhk);
-    const tagMatch = activeTag === ALL || p.tag === activeTag;
+      activeBhk === ALL ||
+      p.configurations.some((c) => c.bhk === activeBhk);
+
+    const tagMatch =
+      activeTag === ALL || p.tag === activeTag;
+
     return bhkMatch && tagMatch;
+  })
+  .sort((a, b) => {
+
+    const getNumericPrice = (price: string) => {
+      const match = price.match(/[\d.]+/);
+      return match ? parseFloat(match[0]) : 0;
+    };
+
+    const priceA = getNumericPrice(a.startingPrice);
+    const priceB = getNumericPrice(b.startingPrice);
+
+    switch (sortBy) {
+
+      case "price-low":
+        return priceA - priceB;
+
+      case "price-high":
+        return priceB - priceA;
+
+      case "new-launch":
+        return a.tag === "New Launch" ? -1 : 1;
+
+      case "ready":
+        return a.tag === "Ready to Move" ? -1 : 1;
+
+      default:
+        return 0;
+    }
   });
 
   return (
@@ -86,7 +121,103 @@ export function PropertiesPage() {
           </div>
         </div>
       </div>
+      {/* Floating sort */}
+<div className="sticky top-24 z-30 mx-auto max-w-6xl container-px">
+  <div className="flex justify-end py-4">
 
+    <div className="relative">
+
+      <button
+        onClick={() => setSortOpen((v) => !v)}
+        className="
+          inline-flex items-center gap-2
+          rounded-2xl border border-white/20
+          bg-white/70 px-4 py-2.5
+          text-sm font-semibold text-slate-800
+          shadow-lg backdrop-blur-xl
+          transition-all duration-200
+          hover:bg-white/90
+        "
+      >
+        <svg
+          width="15"
+          height="15"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+        >
+          <path d="M3 6h18M6 12h12M10 18h4" />
+        </svg>
+
+        Sort By
+      </button>
+
+      {/* Dropdown */}
+      {sortOpen && (
+        <div
+          className="
+            absolute right-0 mt-3 w-64 overflow-hidden
+            rounded-3xl border border-white/20
+            bg-white/75 backdrop-blur-2xl
+            shadow-2xl
+          "
+        >
+
+          {[
+            {
+              label: "Default",
+              value: "default",
+            },
+            {
+              label: "Price: Low to High",
+              value: "price-low",
+            },
+            {
+              label: "Price: High to Low",
+              value: "price-high",
+            },
+            {
+              label: "New Launches First",
+              value: "new-launch",
+            },
+            {
+              label: "Ready to Move First",
+              value: "ready",
+            },
+          ].map((option) => (
+            <button
+              key={option.value}
+              onClick={() => {
+                setSortBy(option.value);
+                setSortOpen(false);
+              }}
+              className={`
+                flex w-full items-center justify-between
+                px-5 py-3 text-left text-sm font-medium
+                transition-colors
+                hover:bg-slate-100/70
+                ${
+                  sortBy === option.value
+                    ? "bg-slate-100 text-slate-900"
+                    : "text-slate-600"
+                }
+              `}
+            >
+              {option.label}
+
+              {sortBy === option.value && (
+                <span className="text-xs text-slate-400">
+                  Active
+                </span>
+              )}
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  </div>
+</div>
       {/* Results count */}
       <div className="mx-auto max-w-6xl container-px py-5">
         <p className="text-sm text-slate-500">
