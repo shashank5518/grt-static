@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export function PropertiesNavbar() {
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200/50 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/70">
+    <header className="sticky top-0 z-50 border-b border-slate-200/50 bg-white/80 backdrop-blur supports-backdrop-filter:bg-white/70">
       <div className="mx-auto max-w-7xl px-8 md:px-14">
-        <div className="relative flex h-[70px] md:h-[80px] items-center justify-between">
+        <div className="relative flex h-17.5 md:h-20 items-center justify-between">
 
           {/* Left — Logo */}
           <Link
@@ -19,7 +19,7 @@ export function PropertiesNavbar() {
               alt="Growth Realtech"
               width={400}
               height={110}
-              className="h-[55px] md:h-[65px] w-auto object-contain"
+              className="h-13.75 md:h-16.25 w-auto object-contain"
               priority
             />
           </Link>

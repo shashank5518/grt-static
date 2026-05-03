@@ -33,7 +33,7 @@ export function PropertiesPage() {
       <PropertiesNavbar />
 
       {/* Hero bar */}
-      <div className="bg-[color:var(--brand-900)]">
+      <div className="bg-(--brand-900)">
         <div className="mx-auto max-w-6xl container-px py-10">
           <p className="text-xs font-semibold tracking-[0.18em] text-white/40">
             GURGAON · PREMIUM INVENTORY
@@ -56,7 +56,7 @@ export function PropertiesPage() {
                   onClick={() => setActiveBhk(bhk)}
                   className={`rounded-full px-3.5 py-1.5 text-xs font-semibold transition focus:outline-none ${
                     activeBhk === bhk
-                      ? "bg-white text-[color:var(--brand-900)]"
+                      ? "bg-white text-(--brand-900)"
                       : "border border-white/20 text-white/70 hover:border-white/50 hover:text-white"
                   }`}
                 >
@@ -75,7 +75,7 @@ export function PropertiesPage() {
                   onClick={() => setActiveTag(tag)}
                   className={`rounded-full px-3.5 py-1.5 text-xs font-semibold transition focus:outline-none ${
                     activeTag === tag
-                      ? "bg-white text-[color:var(--brand-900)]"
+                      ? "bg-white text-(--brand-900)"
                       : "border border-white/20 text-white/70 hover:border-white/50 hover:text-white"
                   }`}
                 >
@@ -124,7 +124,7 @@ export function PropertiesPage() {
                 setActiveBhk(ALL);
                 setActiveTag(ALL);
               }}
-              className="mt-4 rounded-full bg-[color:var(--brand-900)] px-5 py-2 text-sm font-semibold text-white transition hover:bg-[color:var(--brand-800)]"
+              className="mt-4 rounded-full bg-(--brand-900) px-5 py-2 text-sm font-semibold text-white transition hover:bg-(--brand-800)"
             >
               Clear filters
             </button>
@@ -162,7 +162,7 @@ export function PropertiesPage() {
               href="https://wa.me/919999982787"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex h-11 items-center justify-center rounded-full bg-[color:var(--brand-900)] px-5 text-sm font-semibold text-white transition hover:bg-[color:var(--brand-800)]"
+              className="inline-flex h-11 items-center justify-center rounded-full bg-(--brand-900) px-5 text-sm font-semibold text-white transition hover:bg-(--brand-800)"
             >
               WhatsApp Us
             </a>
