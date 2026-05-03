@@ -291,7 +291,7 @@ export const properties: Property[] = [
       },
     ],
     highlights: ["Luxury", "Club House", "Dubai Inspired Design"],
-    image: "/properties/palm-hills.jpg",
+    image: "/properties/palm-hills.avif",
   },
   {
     id: 7,
@@ -404,6 +404,76 @@ export const properties: Property[] = [
   },
   {
     id: 10,
+    name: "SS Leaf",
+    developer: "SS Group",
+    location: "Sector 85, Gurgaon",
+    tag: "Ready to Move",
+    tagColor: "bg-emerald-100 text-emerald-700",
+    startingPrice: "₹1.90 Cr Onwards",
+    configurations: [
+      {
+        bhk: "2 BHK",
+        options: [
+          {
+            size: "1640 sq ft",
+            price: "₹1.90 - 1.95 Cr"
+          },
+          {
+            size: "1671 sq ft",
+            price: "₹2.00 - 2.05 Cr"
+          },
+          {
+            size: "1741 sq ft",
+            price: "₹2.10 - 2.15 Cr"
+          },
+          {
+            size: "1772 sq ft",
+            price: "₹2.15 - 2.20 Cr"
+          }
+        ]
+      },
+      {
+        bhk: "3 BHK + Servant Room",
+        options: [
+          {
+            size: "2408 sq ft",
+            price: "₹2.90 - 2.95 Cr"
+          }
+        ]
+      },
+      {
+        bhk: "4 BHK + Servant",
+        options: [
+          {
+            size: "2812 sq ft",
+            price: "₹3.40 - 3.45 Cr"
+          }
+        ]
+      },
+      {
+        bhk: "4 BHK Penthouse",
+        options: [
+          {
+            size: "3950 sq ft",
+            price: "₹4.75 - 4.80 Cr"
+          }
+        ]
+      },
+      {
+        bhk: "5 BHK Penthouse",
+        options: [
+          {
+            size: "4950 sq ft",
+            price: "₹5.95 - 6.00 Cr"
+          }
+        ]
+      }
+    ],
+    highlights: ["Centralized AC", "Club House", "Luxury"],
+    image: "/properties/ss-leaf.avif",
+  },
+  {
+    id: 11,
     name: "Gurgaon One",
     developer: "Alpha Corp Group",
     location: "Sector 84, Gurgaon",
