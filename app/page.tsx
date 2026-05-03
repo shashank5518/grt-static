@@ -24,7 +24,6 @@ export default function Home() {
         <ContactSection />
         <MasterPlanSection />
       </main>
-      <Footer />
       <WhatsAppButton />
     </div>
   );
