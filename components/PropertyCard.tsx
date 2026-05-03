@@ -10,6 +10,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import Image from "next/image";
 
 export function PropertyCard({ property }: { property: Property }) {
   const [selectedBhk, setSelectedBhk] = useState<string>("");
@@ -45,33 +46,43 @@ export function PropertyCard({ property }: { property: Property }) {
   return (
     <article className="group relative flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
 
-      {/* Gradient image header */}
-      <div className={`relative h-44 bg-gradient-to-br ${property.gradient} flex-shrink-0`}>
+      <div className="relative h-52 overflow-hidden flex-shrink-0">
 
-        {/* Status tag */}
-        <span className={`absolute top-3 left-3 inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold ${property.tagColor}`}>
-          {property.tag}
-        </span>
+  {/* Property image */}
+  <Image
+    src={property.image}
+    alt={property.name}
+    fill
+    className="
+      object-cover
+      transition-transform duration-700
+      group-hover:scale-105
+    "
+  />
 
-        {/* Price chip — updates on selection */}
-        <div className="absolute bottom-3 left-3">
-          <div className="inline-flex items-baseline gap-1.5 rounded-2xl bg-black/50 px-3 py-1.5 backdrop-blur-sm">
-            <span className="text-xs text-white/60">
-              {"From"}
-            </span>
-            <span className="text-sm font-bold text-white">{priceToShow}</span>
-          </div>
-        </div>
+  {/* Dark overlay */}
+  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-black/10" />
 
-        {/* Dot pattern overlay */}
-        <div
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage: "radial-gradient(circle, white 1px, transparent 1px)",
-            backgroundSize: "24px 24px",
-          }}
-        />
-      </div>
+  {/* Status tag */}
+  <span
+    className={`absolute top-3 left-3 inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold backdrop-blur-md ${property.tagColor}`}
+  >
+    {property.tag}
+  </span>
+
+  {/* Price chip */}
+  <div className="absolute bottom-3 left-3">
+    <div className="inline-flex items-baseline gap-1.5 rounded-2xl bg-black/40 px-3 py-1.5 backdrop-blur-md border border-white/10">
+      <span className="text-xs text-white/70">
+        From
+      </span>
+
+      <span className="text-sm font-bold text-white">
+        {priceToShow}
+      </span>
+    </div>
+  </div>
+</div>
 
       {/* Card body */}
       <div className="flex flex-1 flex-col gap-4 p-5">
