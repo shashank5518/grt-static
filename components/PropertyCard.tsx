@@ -20,8 +20,14 @@ export function PropertyCard({ property }: { property: Property }) {
     (c) => c.bhk === selectedBhk
   );
 
-  const priceToShow = selectedConfig?.priceRange ?? property.startingPrice;
+const selectedOption = selectedConfig?.options.find(
+  (o) => o.size === selectedSize
+);
 
+const priceToShow =
+  selectedOption?.price ||
+  selectedConfig?.options[0]?.price ||
+  property.startingPrice;
   const handleBhkChange = (bhk: string) => {
   setSelectedBhk(bhk);
 
@@ -33,8 +39,8 @@ export function PropertyCard({ property }: { property: Property }) {
   }
 
   // Auto-select if only one size exists
-  if (config.sizes.length === 1) {
-    setSelectedSize(config.sizes[0]);
+  if (config.options.length === 1) {
+  setSelectedSize(config.options[0].size);
   } else {
     setSelectedSize("");
   }
@@ -167,7 +173,7 @@ export function PropertyCard({ property }: { property: Property }) {
 </div>
 
           {/* Step 2 — Size */}
-{selectedConfig && selectedConfig.sizes.length > 1 && (
+{selectedConfig && selectedConfig.options.length > 1 && (
   <div>
     <label className="mb-2 block text-[11px] font-semibold tracking-[0.14em] text-slate-400">
       STEP 2 · SELECT SIZE
@@ -198,18 +204,18 @@ export function PropertyCard({ property }: { property: Property }) {
           shadow-2xl
         "
       >
-        {selectedConfig.sizes.map((s) => (
-          <SelectItem
-            key={s}
-            value={s}
-            className="
-              rounded-xl text-sm font-medium
-              focus:bg-slate-100
-            "
-          >
-            {s}
-          </SelectItem>
-        ))}
+        {selectedConfig.options.map((s) => (
+  <SelectItem
+    key={s.size}
+    value={s.size}
+    className="
+      rounded-xl text-sm font-medium
+      focus:bg-slate-100
+    "
+  >
+    {s.size}
+  </SelectItem>
+))}
       </SelectContent>
     </Select>
   </div>

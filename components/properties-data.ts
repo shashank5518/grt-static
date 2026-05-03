@@ -2,9 +2,11 @@
 
 export type Configuration = {
   bhk: string;
-  sizes: string[];
-  priceRange: string;
-};
+  options: {
+    size: string;
+    price: string;
+  }[];
+}
 
 export type Property = {
   id: number;
@@ -29,10 +31,46 @@ export const properties: Property[] = [
     tagColor: "bg-emerald-100 text-emerald-700",
     startingPrice: "₹1.55 Cr Onwards",
     configurations: [
-      { bhk: "3 BHK", sizes: ["1430 sq ft", "1690 sq ft"], priceRange: "₹1.55 Cr – ₹1.80 Cr" },
-      { bhk: "3 BHK + Servant Room", sizes: ["1960 sq ft"], priceRange: "₹2.00 Cr Onwards" },
-      { bhk: "4 BHK + Servant Room", sizes: ["2535 sq ft"], priceRange: "₹2.50 Cr onwards" },
-      { bhk: "4/5 BHK (Duplex)", sizes: ["300 sq yd"], priceRange: "₹6.50 Cr onwards" }
+      {
+        bhk: "3 BHK",
+        options: [
+          {
+            size: "1430 sq ft",
+            price: "₹1.55 - 1.60 Cr"
+          },
+          {
+            size: "1690 sq ft",
+            price: "₹1.75 - 1.80 Cr"
+          }
+        ]
+      },
+      {
+        bhk: "3 BHK + Servant Room",
+        options: [
+          {
+            size: "1960 sq ft",
+            price: "₹1.95 - 2.00 Cr"
+          }
+        ]
+      },
+      {
+        bhk: "4 BHK + Servant Room",
+        options: [
+          {
+            size: "2535 sq ft",
+            price: "₹2.55 - 2.60 Cr"
+          }
+        ]
+      },
+      {
+        bhk: "4/5 BHK Duplex",
+        options: [
+          {
+            size: "300 sq yd",
+            price: "₹6.50 Cr Onwards"
+          }
+        ]
+      },
     ],
     highlights: ["Gated community", "Club house", "Swimming pool"],
     image: "/properties/casa-bella.webp",
@@ -46,9 +84,37 @@ export const properties: Property[] = [
     tagColor: "bg-emerald-100 text-emerald-700",
     startingPrice: "₹1.80 Cr Onwards",
     configurations: [
-      { bhk: "3 BHK + Servant Room", sizes: ["1790 sq ft", "2300 sq ft"], priceRange: "₹1.80 - 2.35 Cr" },
-      { bhk: "4 BHK + Servant Room", sizes: ["3500 sq ft"], priceRange: "₹3.50 Cr Onwards" },
-      { bhk: "5 BHK + Servant Room", sizes: ["5320 sq ft"], priceRange: "₹5.25 Cr Onwards" },
+      {
+        bhk: "3 BHK + Servant Room",
+        options: [
+          {
+            size: "1790 sq ft",
+            price: "₹1.80 - 1.85 Cr"
+          },
+          {
+            size: "2300 sq ft",
+            price: "₹2.35 - 2.40 Cr"
+          },
+        ]
+      },
+      {
+        bhk: "4 BHK + Servant Room",
+        options: [
+          {
+            size: "3500 sq ft",
+            price: "₹3.50 - 3.55 Cr"
+          }
+        ]
+      },
+      {
+        bhk: "5 BHK + Servant Room",
+        options: [
+          {
+            size: "5320 sq ft",
+            price: "₹5.25 - 5.30 Cr"
+          }
+        ]
+      },
     ],
     highlights: ["Gated Community", "Club House", "Swimming Pool"],
     image: "/properties/royale-ville.webp",
@@ -62,8 +128,24 @@ export const properties: Property[] = [
     tagColor: "bg-emerald-100 text-emerald-700",
     startingPrice: "₹1.05 Cr Onwards",
     configurations: [
-      { bhk: "2 BHK", sizes: ["1050 sq ft"], priceRange: "₹1.05 Cr Onwards" },
-      { bhk: "3 BHK", sizes: ["1340 sq ft"], priceRange: "₹1.35 Cr Onwards" },
+      {
+        bhk: "2 BHK",
+        options: [
+          {
+            size: "1050 sq ft",
+            price: "₹1.05 - 1.10 Cr"
+          }
+        ]
+      },
+      {
+        bhk: "3 BHK",
+        options: [
+          {
+            size: "1340 sq ft",
+            price: "₹1.35 - 1.40 Cr"
+          }
+        ]
+      },
     ],
     highlights: ["Gated Community", "Club House", "Swimming Pool"],
     image: "/properties/paradise.webp",
@@ -77,9 +159,49 @@ export const properties: Property[] = [
     tagColor: "bg-emerald-100 text-emerald-700",
     startingPrice: "₹1.80 Cr Onwards",
     configurations: [
-      { bhk: "3 BHK", sizes: ["1490 sq ft", "1510 sq ft", "1620 sq ft"], priceRange: "₹1.80 Cr – ₹2.00 Cr" },
-      { bhk: "3 BHK + Servant Room", sizes: ["1815 sq ft", "1960 sq ft"], priceRange: "₹2.20 Cr – ₹2.40 Cr" },
-      { bhk: "4 BHK + Servant Room", sizes: ["2650 sq ft", "2710 sq ft"], priceRange: "₹3.20 Cr – ₹3.50 Cr" },
+      {
+        bhk: "3 BHK",
+        options: [
+          {
+            size: "1490 sq ft",
+            price: "₹1.80 - 1.85 Cr"
+          },
+          {
+            size: "1510 sq ft",
+            price: "₹1.85 - 1.90 Cr"
+          },
+          {
+            size: "1620 sq ft",
+            price: "₹1.95 - 2.00 Cr"
+          }
+        ]
+      },
+      {
+        bhk: "3 BHK + Servant Room",
+        options: [
+          {
+            size: "1815 sq ft",
+            price: "₹2.20 - 2.25 Cr"
+          },
+          {
+            size: "1960 sq ft",
+            price: "₹2.40 - 2.45 Cr"
+          }
+        ]
+      },
+      {
+        bhk: "4 BHK + Servant Room",
+        options: [
+          {
+            size: "2650 sq ft",
+            price: "₹3.20 - 3.25 Cr"
+          },
+          {
+            size: "2710 sq ft",
+            price: "₹3.50 - 3.55 Cr"
+          }
+        ]
+      },
     ],
     highlights: ["Aravali View", "Near 3 Golf Courses", "Club House"],
     image: "/properties/mount-ville.webp",
@@ -91,11 +213,47 @@ export const properties: Property[] = [
     location: "Sector 84, Gurgaon",
     tag: "Ready to Move",
     tagColor: "bg-emerald-100 text-emerald-700",
-    startingPrice: "₹1.60 Cr Onwards",
+    startingPrice: "₹1.55 Cr Onwards",
     configurations: [
-      { bhk: "2 BHK", sizes: ["1465 sq ft"], priceRange: "₹1.60 Cr Onwards" },
-      { bhk: "3 BHK + Servant Room", sizes: ["1745 sq ft", "2070 sq ft", "2905 sq ft (Kalistaa)"], priceRange: "₹1.95 Cr – ₹3.25 Cr" },
-      { bhk: "4 BHK + Servant Room", sizes: ["2670 sq ft", "3865 sq ft (Kalistaa)"], priceRange: "₹2.95 - 4.25 Cr" },
+      {
+        bhk: "2 BHK",
+        options: [
+          {
+            size: "1465 sq ft",
+            price: "₹1.55 - 1.60 Cr"
+          }
+        ]
+      },
+      {
+        bhk: "3 BHK + Servant Room",
+        options: [
+          {
+            size: "1745 sq ft",
+            price: "₹1.95 - 2.00 Cr"
+          },
+          {
+            size: "2070 sq ft",
+            price: "₹2.30 - 2.35 Cr"
+          },
+          {
+            size: "2905 sq ft (Kalistaa)",
+            price: "₹3.25 - 3.30 Cr"
+          }
+        ]
+      },
+      {
+        bhk: "4 BHK + Servant Room",
+        options: [
+          {
+            size: "2670 sq ft",
+            price: "₹2.95 - 3.00 Cr"
+          },
+          {
+            size: "3865 sq ft (Kalistaa)",
+            price: "₹4.25 - 4.30 Cr"
+          }
+        ]
+      },
     ],
     highlights: ["Luxury", "Near Airport", "Club House"],
     image: "/properties/privy-at4.jpg",
@@ -109,8 +267,28 @@ export const properties: Property[] = [
     tagColor: "bg-emerald-100 text-emerald-700",
     startingPrice: "₹1.90 Cr Onwards",
     configurations: [
-      { bhk: "3 BHK + Servant Room", sizes: ["1450 sq ft", "1575 sq ft"], priceRange: "₹1.90 Cr – ₹2.10 Cr" },
-      { bhk: "4 BHK + Servant Room", sizes: ["1950 sq ft"], priceRange: "₹2.55 Cr Onwards" },
+      {
+        bhk: "3 BHK + Servant Room",
+        options: [
+          {
+            size: "1450 sq ft",
+            price: "₹1.90 - 1.95 Cr"
+          },
+          {
+            size: "1575 sq ft",
+            price: "₹2.10 - 2.15 Cr"
+          }
+        ]
+      },
+      {
+        bhk: "4 BHK + Servant Room",
+        options: [
+          {
+            size: "1950 sq ft",
+            price: "₹2.55 - 2.60 Cr"
+          }
+        ]
+      },
     ],
     highlights: ["Luxury", "Club House", "Dubai Inspired Design"],
     image: "/properties/palm-hills.jpg",
@@ -124,7 +302,19 @@ export const properties: Property[] = [
     tagColor: "bg-emerald-100 text-emerald-700",
     startingPrice: "₹2.60 Cr Onwards",
     configurations: [
-      { bhk: "3 BHK + Servant Room", sizes: ["2000 sq ft", "2025 sq ft"], priceRange: "₹2.60 Cr – ₹2.70 Cr" },
+      {
+        bhk: "3 BHK + Servant Room",
+        options: [
+          {
+            size: "2000 sq ft",
+            price: "₹2.60 - 2.65 Cr"
+          },
+          {
+            size: "2025 sq ft",
+            price: "₹2.70 - 2.75 Cr"
+          }
+        ]
+      },
     ],
     highlights: ["30 acres", "Aravali View", "Club House"],
     image: "/properties/palm-heights.jpg",
@@ -136,10 +326,34 @@ export const properties: Property[] = [
     location: "Sector 83, Gurgaon",
     tag: "Ready to Move",
     tagColor: "bg-emerald-100 text-emerald-700",
-    startingPrice: "₹2.05 Cr onwards",
+    startingPrice: "₹2.15 Cr onwards",
     configurations: [
-      { bhk: "3 BHK + Servant Room", sizes: ["1720 sq ft", "1900 sq ft", "1950 sq ft"], priceRange: "₹2.15 Cr – ₹2.60 Cr" },
-      { bhk: "5 BHK (Duplex)", sizes: ["3750 sq ft"], priceRange: "₹4.5 Cr Onwards" },
+      {
+        bhk: "3 BHK + Servant Room",
+        options: [
+          {
+            size: "1720 sq ft",
+            price: "₹2.15 - 2.20 Cr"
+          },
+          {
+            size: "1900 sq ft",
+            price: "₹2.35 - 2.40 Cr"
+          },
+          {
+            size: "1950 sq ft",
+            price: "₹2.60 - 2.65 Cr"
+          }
+        ]
+      },
+      {
+        bhk: "5 BHK Duplex",
+        options: [
+          {
+            size: "3750 sq ft",
+            price: "₹4.55 - 4.60 Cr"
+          }
+        ]
+      },
     ],
     highlights: ["Luxury", "Prime Location", "Commercial Hub Nearby"],
     image: "/properties/palm-gardens.jpg",
@@ -151,13 +365,98 @@ export const properties: Property[] = [
     location: "Sector 84, Gurgaon",
     tag: "Ready to Move",
     tagColor: "bg-emerald-100 text-emerald-700",
-    startingPrice: "₹1.50 Cr Onwards",
+    startingPrice: "₹1.45 Cr Onwards",
     configurations: [
-      { bhk: "2 BHK", sizes: ["1425 sq ft"], priceRange: "₹1.45 Cr Onwards" },
-      { bhk: "3 BHK", sizes: ["1750 sq ft", "1890 sq ft"], priceRange: "₹1.80 Cr – ₹2.00 Cr" },
-      { bhk: "3 BHK + Servant Room", sizes: ["2250 sq ft"], priceRange: "₹2.30 Cr Onwards" },
+      {
+        bhk: "2 BHK",
+        options: [
+          {
+            size: "1425 sq ft",
+            price: "₹1.45 - 1.50 Cr"
+          }
+        ]
+      },
+      {
+        bhk: "3 BHK",
+        options: [
+          {
+            size: "1750 sq ft",
+            price: "₹1.80 - 1.85 Cr"
+          },
+          {
+            size: "1890 sq ft",
+            price: "₹2.00 - 2.05 Cr"
+          }
+        ]
+      },
+      {
+        bhk: "3 BHK + Servant Room",
+        options: [
+          {
+            size: "2250 sq ft",
+            price: "₹2.30 - 2.35 Cr"
+          }
+        ]
+      },
     ],
     highlights: ["Prime location", "Near Airport", "Commercial Hub Nearby"],
     image: "/properties/ss-coralwood.webp",
+  },
+  {
+    id: 10,
+    name: "Gurgaon One",
+    developer: "Alpha Corp Group",
+    location: "Sector 84, Gurgaon",
+    tag: "Ready to Move",
+    tagColor: "bg-emerald-100 text-emerald-700",
+    startingPrice: "₹1.40 Cr Onwards",
+    configurations: [
+      {
+        bhk: "2 BHK",
+        options: [
+          {
+            size: "1270 sq ft",
+            price: "₹1.40 - 1.45 Cr"
+          }
+        ]
+      },
+      {
+        bhk: "2 BHK + Servant Room",
+        options: [
+          {
+            size: "1534 sq ft",
+            price: "₹1.70 - 1.75 Cr"
+          }
+        ]
+      },
+      {
+        bhk: "3 BHK + Servant",
+        options: [
+          {
+            size: "1963 sq ft",
+            price: "₹2.30 - 2.35 Cr"
+          },
+          {
+            size: "2067 sq ft",
+            price: "₹2.40 - 2.45 Cr"
+          },
+          {
+            size: "2244 sq ft",
+            price: "₹2.55 - 2.60 Cr"
+          }
+        ]
+      },
+      {
+        bhk: "4 BHK + Servant",
+        options: [
+          {
+            size: "3434 sq ft",
+            price: "₹3.60 - 3.65 Cr"
+          }
+        ]
+      }
+    ],
+    highlights: ["Premium Property", "Club House", "Prime Location"],
+    image: "/properties/gurgaon-one-84.jpg",
   },
 ];
