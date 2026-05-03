@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Geist, Inter } from "next/font/google";
 import Image from "next/image";
 import "./globals.css";
+import { Footer } from "@/components/Footer";
 
-const inter = Inter({
-  variable: "--font-inter",
+const geist = Geist({
+  variable: "--font-sans",
   subsets: ["latin"],
   display: "swap",
 });
@@ -65,7 +66,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} h-full antialiased`}>
+    <html lang="en" className={`${geist.variable} h-full antialiased`}
+    data-scroll-behavior="smooth">
       <body className="min-h-full flex flex-col bg-white text-slate-900">
         {children}
 
@@ -82,6 +84,8 @@ export default function RootLayout({
             className="opacity-[0.15] mix-blend-multiply"
           />
         </div>
+              <Footer />
+
       </body>
     </html>
   );

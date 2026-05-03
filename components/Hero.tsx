@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ViewPropertiesButton } from "./ViewPropertiesButton";
 
 export function Hero() {
   return (
@@ -48,6 +49,8 @@ export function Hero() {
                 >
                   WhatsApp Us
                 </a>
+                <ViewPropertiesButton />
+
               </div>
 
               <dl className="mt-10 grid max-w-xl grid-cols-2 gap-6 sm:grid-cols-3">
