@@ -24,7 +24,6 @@ export function PropertiesNavbar() {
             />
           </Link>
 
-
           {/* Right — Back button */}
           <Link
             href="/"
