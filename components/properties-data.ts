@@ -953,7 +953,7 @@ export const properties: Property[] = [
         ]
       },
       {
-        bhk: "4 BHK + Servant",
+        bhk: "4 BHK + Servant Room",
         options: [
           {
             size: "3434 sq ft",
