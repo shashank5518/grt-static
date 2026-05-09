@@ -11,6 +11,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import Image from "next/image";
+import Link from "next/link";
 
 export function PropertyCard({ property }: { property: Property }) {
   const [selectedBhk, setSelectedBhk] = useState<string>("");
@@ -258,7 +259,16 @@ const priceToShow =
             </p>
           </div>
         </div>
-
+        <Link href={`/properties/${property.slug}`}
+  className="
+    inline-flex h-11 items-center justify-center
+    rounded-full border border-slate-200
+    px-5 text-sm font-semibold text-slate-900
+    transition hover:bg-slate-50
+  "
+>
+  View Details
+</Link>
         {/* WhatsApp CTA */}
         <a
           href={whatsappHref}

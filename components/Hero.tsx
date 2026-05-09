@@ -80,26 +80,56 @@ export function Hero() {
                 </div>
               </dl>
             </div>
-
-            {/* Right side logo */}
-            <div className="hidden lg:flex shrink-0 items-center justify-center">
-              <div className="relative w-80 xl:w-96">
-                <div className="absolute inset-0 rounded-full bg-white/5 blur-3xl scale-125" />
-                <Image
-                  src="/images/new-logo-white-transparent.png"
-                  alt="Company Logo"
-                  width={384}
-                  height={384}
-                  className="relative drop-shadow-[0_0_80px_rgba(255,255,255,0.2)] opacity-90"
-                  priority
-                />
-              </div>
-            </div>
-
             </div>
           </div>
         </div>
       </div>
+      {/* Floating Hero Logo */}
+<div
+  className="
+    pointer-events-none
+    absolute right-10 top-1/2 hidden
+    -translate-y-1/2 lg:block
+  "
+>
+
+  {/* Glow */}
+  <div
+    className="
+      absolute inset-0
+      scale-125 rounded-full
+      bg-white/10 blur-3xl
+    "
+  />
+
+  {/* Glass card */}
+  <div
+    className="
+      relative rounded-[40px]
+      border border-white/10
+      bg-white/[0.03]
+      p-8 backdrop-blur-md
+      shadow-[0_20px_60px_rgba(0,0,0,0.25)]
+    "
+  >
+
+    <Image
+      src="/images/new-logo-white-transparent.png"
+      alt="Growth Realtech"
+      width={500}
+      height={500}
+      priority
+      className="
+        w-[280px] xl:w-[340px]
+        object-contain
+        opacity-95
+        drop-shadow-[0_0_40px_rgba(255,255,255,0.18)]
+        animate-[float_6s_ease-in-out_infinite]
+      "
+    />
+
+  </div>
+</div>
     </section>
   );
 }
