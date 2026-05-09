@@ -9,7 +9,7 @@ import { properties } from "./properties-data";
 const ALL = "All";
 const bhkOrder = [
   "2 BHK",
-  "2 BHK + Servant",
+  "2 BHK + Servant Room",
   "3 BHK",
   "3 BHK + Servant Room",
   "4 BHK + Servant Room",
