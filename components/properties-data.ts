@@ -85,7 +85,7 @@ export const properties: Property[] = [
         ]
       },
       {
-        bhk: "4/5 BHK Duplex",
+        bhk: "4 BHK Duplex",
         options: [
           {
             size: "300 sq yd",
