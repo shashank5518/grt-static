@@ -16,8 +16,8 @@ const bhkOrder = [
   "4 BHK Penthouse",
   "4 BHK Duplex",
   "5 BHK + Servant Room",
-  "5 BHK Duplex",
-  "5 BHK Penthouse",
+  "5 BHK Penthouse",  
+  "5 BHK Duplex"
 ];
 
 const bhkOptions = [
