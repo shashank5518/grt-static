@@ -105,6 +105,74 @@ export default async function PropertyDetailsPage({
         </div>
       </section>
       <PropertyDetailsNavbar />
+      {/* Highlights */}
+<section
+  id="highlights"
+  className="mx-auto max-w-6xl container-px pt-8"
+>
+
+  <div className="grid gap-4 md:grid-cols-3">
+
+    {property.highlights.map((highlight) => (
+
+  <div
+    key={highlight.label}
+    className="
+      group relative overflow-hidden
+      rounded-[28px]
+      border border-slate-200/70
+      bg-white/70
+      p-6
+      backdrop-blur-xl
+      shadow-[0_10px_35px_rgba(15,23,42,0.04)]
+      transition-all duration-300
+      hover:-translate-y-1
+      hover:shadow-lg
+    "
+  >
+
+    {/* Glow */}
+    <div
+      className="
+        absolute inset-0
+        bg-gradient-to-br
+        from-(--brand-900)/[0.04]
+        to-transparent
+        opacity-0
+        transition-opacity duration-300
+        group-hover:opacity-100
+      "
+    />
+
+    {/* Label */}
+    <p
+      className="
+        relative z-10
+        text-xs font-semibold
+        tracking-[0.16em]
+        text-slate-400
+      "
+    >
+      {highlight.label}
+    </p>
+
+    {/* Value */}
+    <h3
+      className="
+        relative z-10
+        mt-4 text-2xl font-bold
+        text-slate-900
+      "
+    >
+      {highlight.value}
+    </h3>
+
+  </div>
+
+))}
+
+  </div>
+</section>
 
       {/* Content */}
       <section className="mx-auto max-w-6xl container-px py-5">

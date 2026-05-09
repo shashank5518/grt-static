@@ -19,7 +19,10 @@ export type Property = {
   tagColor: string;
   startingPrice: string;
   configurations: Configuration[];
-  highlights: string[];
+  highlights: {
+  label: string;
+  value: string;
+}[];
   amenities: string[];
   image: string;
 };
@@ -92,7 +95,32 @@ export const properties: Property[] = [
         ]
       },
     ],
-    highlights: ["Gated community", "Club house", "Swimming pool"],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "11 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "950+ Units",
+  },
+  {
+    label: "Land Parcel",
+    value: "19.36 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+23",
+  },
+],
     image: "/properties/casa-bella.webp",
   },
   {
@@ -152,7 +180,32 @@ export const properties: Property[] = [
         ]
       },
     ],
-    highlights: ["Gated Community", "Club House", "Swimming Pool"],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "8 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "450+ Units",
+  },
+  {
+    label: "Land Parcel",
+    value: "12.36 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+18",
+  },
+],
     image: "/properties/royale-ville.webp",
   },
   {
@@ -197,7 +250,32 @@ export const properties: Property[] = [
         ]
       },
     ],
-    highlights: ["Gated Community", "Club House", "Swimming Pool"],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "8 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "350+ Units",
+  },
+  {
+    label: "Land Parcel",
+    value: "5 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+12",
+  },
+],
     image: "/properties/paradise.webp",
   },
   {
@@ -272,7 +350,32 @@ export const properties: Property[] = [
         ]
       },
     ],
-    highlights: ["Aravali View", "Near 3 Golf Courses", "Club House"],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "8 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "750+ Units",
+  },
+  {
+    label: "Land Parcel",
+    value: "16.37 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+30",
+  },
+],
     image: "/properties/mount-ville.webp",
   },
   {
@@ -342,7 +445,32 @@ export const properties: Property[] = [
         ]
       },
     ],
-    highlights: ["Luxury", "Near Airport", "Club House"],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "10 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "500+ Units",
+  },
+  {
+    label: "Land Parcel",
+    value: "10.51 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+21",
+  },
+],
     image: "/properties/privy-at4.jpg",
   },
   {
@@ -393,7 +521,32 @@ export const properties: Property[] = [
         ]
       },
     ],
-    highlights: ["Luxury", "Club House", "Dubai Inspired Design"],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "4 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "800+ Units",
+  },
+  {
+    label: "Land Parcel",
+    value: "30 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+13",
+  },
+],
     image: "/properties/palm-hills.avif",
   },
   {
@@ -433,7 +586,32 @@ export const properties: Property[] = [
         ]
       },
     ],
-    highlights: ["30 acres", "Aravali View", "Club House"],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "3 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "300 Units",
+  },
+  {
+    label: "Land Parcel",
+    value: "30 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+24",
+  },
+],
     image: "/properties/palm-heights.jpg",
   },
   {
@@ -489,7 +667,32 @@ export const properties: Property[] = [
         ]
       },
     ],
-    highlights: ["Luxury", "Prime Location", "Commercial Hub Nearby"],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "12 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "1000+ Units",
+  },
+  {
+    label: "Land Parcel",
+    value: "23 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+16",
+  },
+],
     image: "/properties/palm-gardens.jpg",
   },
   {
@@ -549,7 +752,32 @@ export const properties: Property[] = [
         ]
       },
     ],
-    highlights: ["Prime location", "Near Airport", "Commercial Hub Nearby"],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "10 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "630+ Units",
+  },
+  {
+    label: "Land Parcel",
+    value: "15.27 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+21",
+  },
+],
     image: "/properties/ss-coralwood.webp",
   },
   {
@@ -640,7 +868,32 @@ export const properties: Property[] = [
         ]
       }
     ],
-    highlights: ["Centralized AC", "Club House", "Luxury"],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "13 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "550+ Units",
+  },
+  {
+    label: "Land Parcel",
+    value: "11.44 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+26",
+  },
+],
     image: "/properties/ss-leaf.avif",
   },
   {
@@ -715,7 +968,32 @@ export const properties: Property[] = [
         ]
       }
     ],
-    highlights: ["Premium Property", "Club House", "Prime Location"],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "7 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "680+ Units",
+  },
+  {
+    label: "Land Parcel",
+    value: "12.60 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+26",
+  },
+],
     image: "/properties/gurgaon-one-84.jpg",
   },
 ];

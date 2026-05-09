@@ -127,16 +127,25 @@ const priceToShow =
         </div>
 
         {/* Highlight tags */}
-        <div className="flex flex-wrap gap-1.5">
-          {property.highlights.map((h) => (
-            <span
-              key={h}
-              className="rounded-full border border-slate-200 bg-slate-50 px-2 py-0.5 text-xs font-medium text-slate-600"
-            >
-              {h}
-            </span>
-          ))}
-        </div>
+        {/* Highlight tags */}
+<div className="flex flex-wrap gap-1.5">
+
+  {property.highlights.slice(0, 3).map((h) => (
+
+    <span
+      key={h.label}
+      className="
+        rounded-full border border-slate-200
+        bg-slate-50 px-2 py-0.5
+        text-xs font-medium text-slate-600
+      "
+    >
+      {h.value}
+    </span>
+
+  ))}
+
+</div>
 
         <div className="h-px w-full bg-slate-100" />
 
