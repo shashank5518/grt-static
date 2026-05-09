@@ -403,7 +403,7 @@ export const properties: Property[] = [
         bhk: "2 BHK",
         options: [
           {
-            size: "1465 sq ft",
+            size: "1610 sq ft",
             price: "₹1.55 - 1.60 Cr",
             floorPlan : "/floorplans/at4-1465.webp"
           }
@@ -413,17 +413,17 @@ export const properties: Property[] = [
         bhk: "3 BHK + Servant Room",
         options: [
           {
-            size: "1745 sq ft",
+            size: "1918 sq ft",
             price: "₹1.95 - 2.00 Cr",
             floorPlan : "/floorplans/at4-1745.webp"
           },
           {
-            size: "2070 sq ft",
+            size: "2275 sq ft",
             price: "₹2.30 - 2.35 Cr",
             floorPlan : "/floorplans/at4-2070.webp"
           },
           {
-            size: "2905 sq ft (Kalistaa)",
+            size: "3193 sq ft (Kalistaa)",
             price: "₹3.25 - 3.30 Cr",
             floorPlan : "/floorplans/at4-2905.webp"
           }
@@ -433,12 +433,7 @@ export const properties: Property[] = [
         bhk: "4 BHK + Servant Room",
         options: [
           {
-            size: "2670 sq ft",
-            price: "₹2.95 - 3.00 Cr",
-            floorPlan : "/floorplans/at4-2670.webp"
-          },
-          {
-            size: "3865 sq ft (Kalistaa)",
+            size: "4200 sq ft (Kalistaa)",
             price: "₹4.25 - 4.30 Cr",
             floorPlan : "/floorplans/at4-3865.webp"
           }
@@ -838,7 +833,7 @@ export const properties: Property[] = [
         ]
       },
       {
-        bhk: "4 BHK + Servant",
+        bhk: "4 BHK + Servant Room",
         options: [
           {
             size: "2812 sq ft",
@@ -938,7 +933,7 @@ export const properties: Property[] = [
         ]
       },
       {
-        bhk: "3 BHK + Servant",
+        bhk: "3 BHK + Servant Room",
         options: [
           {
             size: "1963 sq ft",

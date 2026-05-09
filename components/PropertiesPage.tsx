@@ -7,11 +7,32 @@ import { PropertyCard } from "./PropertyCard";
 import { properties } from "./properties-data";
 
 const ALL = "All";
+const bhkOrder = [
+  "2 BHK",
+  "2 BHK + Servant",
+  "3 BHK",
+  "3 BHK + Servant Room",
+  "4 BHK + Servant Room",
+  "4 BHK Penthouse",
+  "4 BHK Duplex",
+  "5 BHK + Servant Room",
+  "5 BHK Duplex",
+  "5 BHK Penthouse",
+];
 
 const bhkOptions = [
   ALL,
+
   ...Array.from(
-    new Set(properties.flatMap((p) => p.configurations.map((c) => c.bhk)))
+    new Set(
+      properties.flatMap((p) =>
+        p.configurations.map((c) => c.bhk)
+      )
+    )
+  ).sort(
+    (a, b) =>
+      bhkOrder.indexOf(a) -
+      bhkOrder.indexOf(b)
   ),
 ];
 
