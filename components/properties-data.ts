@@ -1216,4 +1216,114 @@ export const properties: Property[] = [
 ],
     image: "/properties/dlf-skycourt.webp",
   },
+  {
+    id: 15,
+    slug: "dlf-regal-gardens",
+    name: "DLF Regal Gardens",
+    developer: "DLF",
+    location: "Sector 90, Gurgaon",
+    tag: "Ready to Move",
+    tagColor: "bg-emerald-100 text-emerald-700",
+    startingPrice: "₹1.80 Cr Onwards",
+    amenities: [
+      "Swimming Pool",
+"Gymnasium",
+"Club House",
+"Children's Play Area",
+"Theatre",
+"Landscape Garden",
+"Park",
+"Banquet Hall",
+"Gazebo",
+],
+    configurations: [
+       {
+        bhk: "2 BHK",
+        options: [
+          {
+            size: "1469 sq ft",
+            price: "₹1.80 - 1.85 Cr",
+            floorPlan : "/floorplans/dlf-regal-gardens-1469.png"
+          }
+        ]
+      },
+      {
+        bhk: "3 BHK",
+        options: [
+          {
+            size: "1713 sq ft",
+            price: "₹2.15 - 2.20 Cr",
+            floorPlan : "/floorplans/dlf-regal-gardens-1713.png"
+          },
+          {
+            size: "1728 sq ft",
+            price: "₹2.15 - 2.20 Cr",
+            floorPlan : "/floorplans/dlf-regal-gardens-1728.png"
+          },
+          {
+            size: "1737 sq ft",
+            price: "₹2.20 - 2.25 Cr",
+            floorPlan : "/floorplans/dlf-regal-gardens-1737.png"
+          },
+          {
+            size: "1752 sq ft",
+            price: "₹2.25 - 2.30 Cr",
+            floorPlan : "/floorplans/dlf-regal-gardens-1752.png"
+          },
+          {
+            size: "1760 sq ft",
+            price: "₹2.25 - 2.30 Cr",
+            floorPlan : "/floorplans/dlf-regal-gardens-1760.png"
+          },
+          {
+            size: "1778 sq ft",
+            price: "₹2.30 - 2.35 Cr",
+            floorPlan : "/floorplans/dlf-regal-gardens-1778.png"
+          },
+        ]
+      },
+      {
+        bhk: "4 BHK",
+        options: [
+          {
+            size: "2223 sq ft",
+            price: "₹2.80 - 2.85 Cr",
+            floorPlan : "/floorplans/dlf-regal-gardens-2223.png"
+          },
+          {
+            size: "2225 sq ft",
+            price: "₹2.80 - 2.85 Cr",
+            floorPlan : "/floorplans/dlf-regal-gardens-2225.png"
+          },
+        ]
+      },
+    ],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "9 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "550+ Units",
+  },
+  {
+    label: "Land Parcel",
+    value: "11.1 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+29",
+  },
+],
+    image: "/properties/dlf-regal-gardens.webp",
+  },
 ];
