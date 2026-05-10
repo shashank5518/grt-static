@@ -2060,4 +2060,184 @@ export const properties: Property[] = [
 ],
     image: "/properties/greenburg.avif",
   },
+  {
+    id: 24,
+    slug: "county-center-court",
+    name: "County The Center Court",
+    developer: "County Group",
+    location: "Sector 88A, Gurgaon",
+    tag: "Ready to Move",
+    tagColor: "bg-emerald-100 text-emerald-700",
+    startingPrice: "₹2 Cr Onwards",
+    amenities: [
+      "Swimming Pool",
+"Gymnasium",
+"Club House",
+"Golf Course",
+"Creche/Day Care",
+"Children's Play Area",
+"Theatre",
+"Park",
+"Banquet Hall",
+],
+    configurations: [
+      {
+        bhk: "2 BHK",
+        options: [
+          {
+            size: "1565 sq ft",
+            price: "₹2.00 - 2.05 Cr",
+            floorPlan : "/floorplans/county-1565.webp"
+          },
+        ]
+      },
+      {
+        bhk: "3 BHK",
+        options: [
+          {
+            size: "1910 sq ft",
+            price: "₹2.45 - 2.50 Cr",
+            floorPlan : "/floorplans/county-1910.webp"
+          },
+        ]
+      },
+      {
+        bhk: "3 BHK + Servant Room",
+        options: [
+          {
+            size: "2175 sq ft",
+            price: "₹2.75 - 2.80 Cr",
+            floorPlan : "/floorplans/county-2175.webp"
+          },
+        ]
+      },
+    ],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "7 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "450+ Units",
+  },
+  {
+    label: "Land Parcel",
+    value: "14.03 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+29",
+  },
+],
+    image: "/properties/county.webp",
+  },
+  {
+    id: 25,
+    slug: "godrej-air",
+    name: "Godrej Air",
+    developer: "Godrej",
+    location: "Sector 85, Gurgaon",
+    tag: "Under Construction",
+    tagColor: "bg-emerald-100 text-emerald-700",
+    startingPrice: "₹1.5 Cr Onwards",
+    amenities: [
+      "Swimming Pool",
+"Gymnasium",
+"Club House",
+"Mini Theatre",
+"Creche/Day Care",
+"Children's Play Area",
+"Terrace Garden",
+"Park",
+"Banquet Hall",
+],
+    configurations: [
+      {
+        bhk: "1 BHK",
+        options: [
+          {
+            size: "955 sq ft",
+            price: "₹1.45 - 1.50 Cr",
+            floorPlan : "/floorplans/godrej-air-955.webp"
+          },
+        ]
+      },
+      {
+        bhk: "2 BHK",
+        options: [
+          {
+            size: "1400 sq ft",
+            price: "₹2.10 - 2.15 Cr",
+            floorPlan : "/floorplans/godrej-air-1400.webp"
+          },
+        ]
+      },
+      {
+        bhk: "3 BHK",
+        options: [
+          {
+            size: "1830 sq ft",
+            price: "₹2.75 - 2.80 Cr",
+            floorPlan : "/floorplans/godrej-air-1830.webp"
+          },
+        ]
+      },
+      {
+        bhk: "3 BHK + Servant Room",
+        options: [
+          {
+            size: "2130 sq ft",
+            price: "₹3.20 - 3.25 Cr",
+            floorPlan : "/floorplans/godrej-air-2130.webp"
+          },
+        ]
+      },
+      {
+        bhk: "4 BHK + Servant Room",
+        options: [
+          {
+            size: "2600 sq ft",
+            price: "₹3.90 - 3.95 Cr",
+            floorPlan : "/floorplans/godrej-air-2600.webp"
+          },
+        ]
+      },
+    ],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "5 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "600+ Units",
+  },
+  {
+    label: "Land Parcel",
+    value: "10.04 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Expected in 2029",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+32",
+  },
+],
+    image: "/properties/godrej-air.webp",
+  },
 ];
