@@ -991,4 +991,229 @@ export const properties: Property[] = [
 ],
     image: "/properties/gurgaon-one-84.jpg",
   },
+  {
+    id: 12,
+    slug: "dlf-the-primus",
+    name: "DLF The Primus",
+    developer: "DLF",
+    location: "Sector 82A, Gurgaon",
+    tag: "Ready to Move",
+    tagColor: "bg-emerald-100 text-emerald-700",
+    startingPrice: "₹2.80 Cr Onwards",
+    amenities: [
+      "Swimming Pool",
+"Gymnasium",
+"Club House",
+"Children's Play Area",
+"Theatre",
+"Park",
+"Banquet Hall",
+"Jogging Track",
+"Squash Court",
+],
+    configurations: [
+      {
+        bhk: "2 BHK",
+        options: [
+          {
+            size: "1673 sq ft",
+            price: "₹2.80 - 2.85 Cr",
+            floorPlan : "/floorplans/dlf-primus-1673.webp"
+          }
+        ]
+      },
+      {
+        bhk: "3 BHK",
+        options: [
+          {
+            size: "1799 sq ft",
+            price: "₹3.00 - 3.05 Cr",
+            floorPlan : "/floorplans/dlf-primus-1799.webp"
+          }
+        ]
+      },
+      {
+        bhk: "3 BHK + Servant Room",
+        options: [
+          {
+            size: "2066 sq ft",
+            price: "₹3.50 - 3.55 Cr",
+            floorPlan : "/floorplans/dlf-primus-2066.webp"
+          },
+          {
+            size: "2086 sq ft",
+            price: "₹3.55 - 3.60 Cr",
+            floorPlan : "/floorplans/dlf-primus-2086.webp"
+          }
+        ]
+      },
+      {
+        bhk: "4 BHK + Servant Room",
+        options: [
+          {
+            size: "2576 sq ft",
+            price: "₹4.35 - 4.40 Cr",
+            floorPlan : "/floorplans/dlf-primus-2576.webp"
+          }
+        ]
+      }
+    ],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "9 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "600+ Units",
+  },
+  {
+    label: "Land Parcel",
+    value: "12.53 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+32",
+  },
+],
+    image: "/properties/dlf-primus.webp",
+  },
+  {
+    id: 13,
+    slug: "dlf-the-ultima",
+    name: "DLF The Ultima",
+    developer: "DLF",
+    location: "Sector 81, Gurgaon",
+    tag: "Ready to Move",
+    tagColor: "bg-emerald-100 text-emerald-700",
+    startingPrice: "₹2.80 Cr Onwards",
+    amenities: [
+      "Swimming Pool",
+"Gymnasium",
+"Club House",
+"Golf Course",
+"Mini Theatre",
+"Creche/Day Care",
+"Children's Play Area",
+"Landscape Garden",
+"Park",
+],
+    configurations: [
+      {
+        bhk: "3 BHK + Servant Room",
+        options: [
+          {
+            size: "1911 sq ft",
+            price: "₹3.50 - 3.55 Cr",
+            floorPlan : "/floorplans/dlf-ultima-1911.webp"
+          }
+        ]
+      },
+      {
+        bhk: "4 BHK + Servant Room",
+        options: [
+          {
+            size: "3035 sq ft",
+            price: "₹5.25 - 5.30 Cr",
+            floorPlan : "/floorplans/dlf-ultima-3035.webp"
+          }
+        ]
+      }
+    ],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "15 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "900+ Units",
+  },
+  {
+    label: "Land Parcel",
+    value: "23 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+29",
+  },
+],
+    image: "/properties/dlf-ultima.webp",
+  },
+  {
+    id: 14,
+    slug: "dlf-the-skycourt",
+    name: "DLF The Skycourt",
+    developer: "DLF",
+    location: "Sector 86, Gurgaon",
+    tag: "Ready to Move",
+    tagColor: "bg-emerald-100 text-emerald-700",
+    startingPrice: "₹2.15 Cr Onwards",
+    amenities: [
+      "Swimming Pool",
+"Gymnasium",
+"Club House",
+"Children's Play Area",
+"Terrace Garden",
+"Landscape Garden",
+"Park",
+"Banquet Hall",
+"Basketball Court",
+],
+    configurations: [
+      {
+        bhk: "3 BHK",
+        options: [
+          {
+            size: "1860 sq ft",
+            price: "₹2.15 - 2.20 Cr",
+            floorPlan : "/floorplans/dlf-skycourt-1860.webp"
+          }
+        ]
+      }
+    ],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "10 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "650+ Units",
+  },
+  {
+    label: "Land Parcel",
+    value: "13 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+19",
+  },
+],
+    image: "/properties/dlf-skycourt.webp",
+  },
 ];
