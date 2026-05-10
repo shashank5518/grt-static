@@ -105,7 +105,7 @@ export const properties: Property[] = [
     value: "950+ Units",
   },
   {
-    label: "Land Parcel",
+    label: "Land Bank",
     value: "19.36 Acres",
   },
   {
@@ -190,7 +190,7 @@ export const properties: Property[] = [
     value: "450+ Units",
   },
   {
-    label: "Land Parcel",
+    label: "Land Bank",
     value: "12.36 Acres",
   },
   {
@@ -260,7 +260,7 @@ export const properties: Property[] = [
     value: "350+ Units",
   },
   {
-    label: "Land Parcel",
+    label: "Land Bank",
     value: "5 Acres",
   },
   {
@@ -360,7 +360,7 @@ export const properties: Property[] = [
     value: "750+ Units",
   },
   {
-    label: "Land Parcel",
+    label: "Land Bank",
     value: "16.37 Acres",
   },
   {
@@ -450,7 +450,7 @@ export const properties: Property[] = [
     value: "500+ Units",
   },
   {
-    label: "Land Parcel",
+    label: "Land Bank",
     value: "10.51 Acres",
   },
   {
@@ -526,7 +526,7 @@ export const properties: Property[] = [
     value: "800+ Units",
   },
   {
-    label: "Land Parcel",
+    label: "Land Bank",
     value: "30 Acres",
   },
   {
@@ -591,7 +591,7 @@ export const properties: Property[] = [
     value: "300 Units",
   },
   {
-    label: "Land Parcel",
+    label: "Land Bank",
     value: "30 Acres",
   },
   {
@@ -672,7 +672,7 @@ export const properties: Property[] = [
     value: "1000+ Units",
   },
   {
-    label: "Land Parcel",
+    label: "Land Bank",
     value: "23 Acres",
   },
   {
@@ -757,7 +757,7 @@ export const properties: Property[] = [
     value: "630+ Units",
   },
   {
-    label: "Land Parcel",
+    label: "Land Bank",
     value: "15.27 Acres",
   },
   {
@@ -873,7 +873,7 @@ export const properties: Property[] = [
     value: "550+ Units",
   },
   {
-    label: "Land Parcel",
+    label: "Land Bank",
     value: "11.44 Acres",
   },
   {
@@ -973,7 +973,7 @@ export const properties: Property[] = [
     value: "680+ Units",
   },
   {
-    label: "Land Parcel",
+    label: "Land Bank",
     value: "12.60 Acres",
   },
   {
@@ -1068,7 +1068,7 @@ export const properties: Property[] = [
     value: "600+ Units",
   },
   {
-    label: "Land Parcel",
+    label: "Land Bank",
     value: "12.53 Acres",
   },
   {
@@ -1138,7 +1138,7 @@ export const properties: Property[] = [
     value: "900+ Units",
   },
   {
-    label: "Land Parcel",
+    label: "Land Bank",
     value: "23 Acres",
   },
   {
@@ -1198,7 +1198,7 @@ export const properties: Property[] = [
     value: "650+ Units",
   },
   {
-    label: "Land Parcel",
+    label: "Land Bank",
     value: "13 Acres",
   },
   {
@@ -1308,7 +1308,7 @@ export const properties: Property[] = [
     value: "550+ Units",
   },
   {
-    label: "Land Parcel",
+    label: "Land Bank",
     value: "11.1 Acres",
   },
   {
@@ -1393,7 +1393,7 @@ export const properties: Property[] = [
     value: "1500+ Units",
   },
   {
-    label: "Land Parcel",
+    label: "Land Bank",
     value: "32.13 Acres",
   },
   {
@@ -1493,7 +1493,7 @@ export const properties: Property[] = [
     value: "1200 Units",
   },
   {
-    label: "Land Parcel",
+    label: "Land Bank",
     value: "29.63 Acres",
   },
   {
@@ -1592,7 +1592,7 @@ export const properties: Property[] = [
     value: "600+ Units",
   },
   {
-    label: "Land Parcel",
+    label: "Land Bank",
     value: "14.35 Acres",
   },
   {
@@ -1677,7 +1677,7 @@ export const properties: Property[] = [
     value: "500+ Units",
   },
   {
-    label: "Land Parcel",
+    label: "Land Bank",
     value: "10.1 Acres",
   },
   {
@@ -1767,7 +1767,7 @@ export const properties: Property[] = [
     value: "600 Units",
   },
   {
-    label: "Land Parcel",
+    label: "Land Bank",
     value: "8 Acres",
   },
   {
@@ -1857,7 +1857,7 @@ export const properties: Property[] = [
     value: "600+ Units",
   },
   {
-    label: "Land Parcel",
+    label: "Land Bank",
     value: "13 Acres",
   },
   {
@@ -1957,7 +1957,7 @@ export const properties: Property[] = [
     value: "700+ Units",
   },
   {
-    label: "Land Parcel",
+    label: "Land Bank",
     value: "13 Acres",
   },
   {
@@ -2042,7 +2042,7 @@ export const properties: Property[] = [
     value: "700+ Units",
   },
   {
-    label: "Land Parcel",
+    label: "Land Bank",
     value: "14.64 Acres",
   },
   {
@@ -2122,7 +2122,7 @@ export const properties: Property[] = [
     value: "450+ Units",
   },
   {
-    label: "Land Parcel",
+    label: "Land Bank",
     value: "14.03 Acres",
   },
   {
@@ -2222,12 +2222,12 @@ export const properties: Property[] = [
     value: "600+ Units",
   },
   {
-    label: "Land Parcel",
+    label: "Land Bank",
     value: "10.04 Acres",
   },
   {
     label: "Possession",
-    value: "Expected in 2029",
+    value: "Expected 2029",
   },
   {
     label: "RERA Status",
