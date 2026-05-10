@@ -36,7 +36,7 @@ export const properties: Property[] = [
     location: "Sector 82, Gurgaon",
     tag: "Ready to Move",
     tagColor: "bg-emerald-100 text-emerald-700",
-    startingPrice: "₹1.55 Cr Onwards",
+    startingPrice: "₹1.5 Cr Onwards",
     amenities: [
       "Swimming Pool",
 "Gymnasium",
@@ -85,7 +85,7 @@ export const properties: Property[] = [
         ]
       },
       {
-        bhk: "4 BHK Duplex",
+        bhk: "4 BHK Villa",
         options: [
           {
             size: "300 sq yd",
@@ -131,7 +131,7 @@ export const properties: Property[] = [
     location: "Sector 82, Gurgaon",
     tag: "Ready to Move",
     tagColor: "bg-emerald-100 text-emerald-700",
-    startingPrice: "₹1.80 Cr Onwards",
+    startingPrice: "₹1.8 Cr Onwards",
     amenities: [
   "Swimming Pool",
 "Gymnasium",
@@ -216,7 +216,7 @@ export const properties: Property[] = [
     location: "Sector 83, Gurgaon",
     tag: "Ready to Move",
     tagColor: "bg-emerald-100 text-emerald-700",
-    startingPrice: "₹1.05 Cr Onwards",
+    startingPrice: "₹1 Cr Onwards",
     amenities: [
   "Gymnasium",
 "Club House",
@@ -286,7 +286,7 @@ export const properties: Property[] = [
     location: "Sector 79, Gurgaon",
     tag: "Ready to Move",
     tagColor: "bg-emerald-100 text-emerald-700",
-    startingPrice: "₹1.80 Cr Onwards",
+    startingPrice: "₹1.8 Cr Onwards",
     amenities: [
   "Swimming Pool",
 "Gymnasium",
@@ -386,7 +386,7 @@ export const properties: Property[] = [
     location: "Sector 84, Gurgaon",
     tag: "Ready to Move",
     tagColor: "bg-emerald-100 text-emerald-700",
-    startingPrice: "₹1.55 Cr Onwards",
+    startingPrice: "₹1.5 Cr Onwards",
     amenities: [
   "Swimming Pool",
 "Gymnasium",
@@ -476,7 +476,7 @@ export const properties: Property[] = [
     location: "Sector 77, Gurgaon",
     tag: "Ready to Move",
     tagColor: "bg-emerald-100 text-emerald-700",
-    startingPrice: "₹1.90 Cr Onwards",
+    startingPrice: "₹1.9 Cr Onwards",
     amenities: [
   "Swimming Pool",
 "Gymnasium",
@@ -552,7 +552,7 @@ export const properties: Property[] = [
     location: "Sector 77, Gurgaon",
     tag: "Ready to Move",
     tagColor: "bg-emerald-100 text-emerald-700",
-    startingPrice: "₹2.60 Cr Onwards",
+    startingPrice: "₹2.6 Cr Onwards",
     amenities: [
   "Swimming Pool",
 "Gymnasium",
@@ -617,7 +617,7 @@ export const properties: Property[] = [
     location: "Sector 83, Gurgaon",
     tag: "Ready to Move",
     tagColor: "bg-emerald-100 text-emerald-700",
-    startingPrice: "₹2.15 Cr onwards",
+    startingPrice: "₹2.1 Cr onwards",
     amenities: [
       "Swimming Pool",
 "Gymnasium",
@@ -652,7 +652,7 @@ export const properties: Property[] = [
         ]
       },
       {
-        bhk: "5 BHK Duplex",
+        bhk: "5 BHK Villa",
         options: [
           {
             size: "3750 sq ft",
@@ -698,7 +698,7 @@ export const properties: Property[] = [
     location: "Sector 84, Gurgaon",
     tag: "Ready to Move",
     tagColor: "bg-emerald-100 text-emerald-700",
-    startingPrice: "₹1.45 Cr Onwards",
+    startingPrice: "₹1.5 Cr Onwards",
     amenities: [
   "Swimming Pool",
 "Gymnasium",
@@ -783,7 +783,7 @@ export const properties: Property[] = [
     location: "Sector 85, Gurgaon",
     tag: "Ready to Move",
     tagColor: "bg-emerald-100 text-emerald-700",
-    startingPrice: "₹1.90 Cr Onwards",
+    startingPrice: "₹1.9 Cr Onwards",
     amenities: [
       "Swimming Pool",
 "Gymnasium",
@@ -899,7 +899,7 @@ export const properties: Property[] = [
     location: "Sector 84, Gurgaon",
     tag: "Ready to Move",
     tagColor: "bg-emerald-100 text-emerald-700",
-    startingPrice: "₹1.40 Cr Onwards",
+    startingPrice: "₹1.4 Cr Onwards",
     amenities: [
   "Swimming Pool",
 "Gymnasium",
@@ -999,7 +999,7 @@ export const properties: Property[] = [
     location: "Sector 82A, Gurgaon",
     tag: "Ready to Move",
     tagColor: "bg-emerald-100 text-emerald-700",
-    startingPrice: "₹2.80 Cr Onwards",
+    startingPrice: "₹2.8 Cr Onwards",
     amenities: [
       "Swimming Pool",
 "Gymnasium",
@@ -1094,7 +1094,7 @@ export const properties: Property[] = [
     location: "Sector 81, Gurgaon",
     tag: "Ready to Move",
     tagColor: "bg-emerald-100 text-emerald-700",
-    startingPrice: "₹2.80 Cr Onwards",
+    startingPrice: "₹2.8 Cr Onwards",
     amenities: [
       "Swimming Pool",
 "Gymnasium",
@@ -1164,7 +1164,7 @@ export const properties: Property[] = [
     location: "Sector 86, Gurgaon",
     tag: "Ready to Move",
     tagColor: "bg-emerald-100 text-emerald-700",
-    startingPrice: "₹2.15 Cr Onwards",
+    startingPrice: "₹2.1 Cr Onwards",
     amenities: [
       "Swimming Pool",
 "Gymnasium",
@@ -1224,7 +1224,7 @@ export const properties: Property[] = [
     location: "Sector 90, Gurgaon",
     tag: "Ready to Move",
     tagColor: "bg-emerald-100 text-emerald-700",
-    startingPrice: "₹1.80 Cr Onwards",
+    startingPrice: "₹1.8 Cr Onwards",
     amenities: [
       "Swimming Pool",
 "Gymnasium",
@@ -1334,7 +1334,7 @@ export const properties: Property[] = [
     location: "Sector 90, Gurgaon",
     tag: "Ready to Move",
     tagColor: "bg-emerald-100 text-emerald-700",
-    startingPrice: "₹1.75 Cr Onwards",
+    startingPrice: "₹1.7 Cr Onwards",
     amenities: [
       "Swimming Pool",
 "Gymnasium",
@@ -1419,7 +1419,7 @@ export const properties: Property[] = [
     location: "Sector 86, Gurgaon",
     tag: "Ready to Move",
     tagColor: "bg-emerald-100 text-emerald-700",
-    startingPrice: "₹1.75 Cr Onwards",
+    startingPrice: "₹1.7 Cr Onwards",
     amenities: [
       "Swimming Pool",
 "Gymnasium",
@@ -1519,7 +1519,7 @@ export const properties: Property[] = [
     location: "Sector 91, Gurgaon",
     tag: "Ready to Move",
     tagColor: "bg-emerald-100 text-emerald-700",
-    startingPrice: "₹1.55 Cr Onwards",
+    startingPrice: "₹1.5 Cr Onwards",
     amenities: [
       "Swimming Pool",
 "Gymnasium",
@@ -1609,5 +1609,455 @@ export const properties: Property[] = [
   },
 ],
     image: "/properties/dlf-new-town-heights-3.webp",
+  },
+  {
+    id: 19,
+    slug: "bestech-altura",
+    name: "Bestech Park View Altura",
+    developer: "Bestech Group",
+    location: "Sector 79, Gurgaon",
+    tag: "Ready to Move",
+    tagColor: "bg-emerald-100 text-emerald-700",
+    startingPrice: "₹3 Cr Onwards",
+    amenities: [
+      "Swimming Pool",
+"Gymnasium",
+"Club House",
+"Children's Play Area",
+"Park",
+"Banquet Hall",
+"Gazebo",
+"Amphitheatre",
+"Jogging Track",
+],
+    configurations: [
+       {
+        bhk: "3 BHK",
+        options: [
+          {
+            size: "2015 sq ft",
+            price: "₹3.00 - 3.05 Cr",
+            floorPlan : "/floorplans/altura-2015.webp"
+          },
+          {
+            size: "2050 sq ft",
+            price: "₹3.05 - 3.10 Cr",
+            floorPlan : "/floorplans/altura-2050.webp"
+          }
+        ]
+      },
+      {
+        bhk: "3 BHK + Servant Room",
+        options: [
+          {
+            size: "2150 sq ft",
+            price: "₹3.20 - 3.25 Cr",
+            floorPlan : "/floorplans/altura-2150.webp"
+          },
+        ]
+      },
+      {
+        bhk: "4 BHK + Servant Room",
+        options: [
+          {
+            size: "2675 sq ft",
+            price: "₹4.00 - 4.05 Cr",
+            floorPlan : "/floorplans/altura-2675.webp"
+          },
+        ]
+      },
+    ],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "7 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "500+ Units",
+  },
+  {
+    label: "Land Parcel",
+    value: "10.1 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+20",
+  },
+],
+    image: "/properties/bestech-altura.avif",
+  },
+  {
+    id: 20,
+    slug: "bestech-grand-spa",
+    name: "Bestech Park View Grand Spa",
+    developer: "Bestech Group",
+    location: "Sector 81, Gurgaon",
+    tag: "Ready to Move",
+    tagColor: "bg-emerald-100 text-emerald-700",
+    startingPrice: "₹3.5 Cr Onwards",
+    amenities: [
+      "Swimming Pool",
+"Gymnasium",
+"Club House",
+"Golf Course",
+"Creche/Day Care",
+"Children's Play Area",
+"Park",
+"Amphitheatre",
+"Jogging Track",
+],
+    configurations: [
+       {
+        bhk: "3 BHK + Servant Room",
+        options: [
+          {
+            size: "2660 sq ft",
+            price: "₹3.50 - 3.55 Cr",
+            floorPlan : "/floorplans/grand-spa-2660.webp"
+          },
+          {
+            size: "2995 sq ft",
+            price: "₹3.95 - 4.00 Cr",
+            floorPlan : "/floorplans/grand-spa-2995.webp"
+          }
+        ]
+      },
+      {
+        bhk: "4 BHK + Servant Room",
+        options: [
+          {
+            size: "3185 sq ft",
+            price: "₹4.20 - 4.25 Cr",
+            floorPlan : "/floorplans/grand-spa-3185.webp"
+          },
+          {
+            size: "3470 sq ft",
+            price: "₹4.60 - 4.65 Cr",
+            floorPlan : "/floorplans/grand-spa-3470.webp"
+          },
+          {
+            size: "3495 sq ft",
+            price: "₹4.65 - 4.70 Cr",
+            floorPlan : "/floorplans/grand-spa-3495.webp"
+          },
+          {
+            size: "4200 sq ft",
+            price: "₹5.55 - 5.60 Cr",
+            floorPlan : "/floorplans/grand-spa-4200.webp"
+          },
+        ]
+      },
+    ],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "9 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "600 Units",
+  },
+  {
+    label: "Land Parcel",
+    value: "8 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+29",
+  },
+],
+    image: "/properties/grand-spa.avif",
+  },
+  {
+    id: 21,
+    slug: "bestech-sanskruti",
+    name: "Bestech Park View Sanskruti",
+    developer: "Bestech Group",
+    location: "Sector 92, Gurgaon",
+    tag: "Ready to Move",
+    tagColor: "bg-emerald-100 text-emerald-700",
+    startingPrice: "₹2.3 Cr Onwards",
+    amenities: [
+      "Swimming Pool",
+"Gymnasium",
+"Club House",
+"Children's Play Area",
+"Theatre",
+"Park",
+"Amphitheatre",
+"Jogging Track",
+"Badminton Court",
+],
+    configurations: [
+      {
+        bhk: "3 BHK",
+        options: [
+          {
+            size: "1920 sq ft",
+            price: "₹2.35 - 2.40 Cr",
+            floorPlan : "/floorplans/sanskruti-1920.webp"
+          },
+        ]
+      },
+       {
+        bhk: "3 BHK + Servant Room",
+        options: [
+          {
+            size: "1995 sq ft",
+            price: "₹2.45 - 2.50 Cr",
+            floorPlan : "/floorplans/sanskruti-1995.webp"
+          },
+          {
+            size: "2120 sq ft",
+            price: "₹2.60 - 2.65 Cr",
+            floorPlan : "/floorplans/sanskruti-2120.webp"
+          }
+        ]
+      },
+      {
+        bhk: "4 BHK + Servant Room",
+        options: [
+          {
+            size: "2325 sq ft",
+            price: "₹2.85 - 2.90 Cr",
+            floorPlan : "/floorplans/sanskruti-2325.webp"
+          },
+          {
+            size: "2475 sq ft",
+            price: "₹3.05 - 3.10 Cr",
+            floorPlan : "/floorplans/sanskruti-2475.webp"
+          },
+        ]
+      },
+    ],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "8 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "600+ Units",
+  },
+  {
+    label: "Land Parcel",
+    value: "13 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+19",
+  },
+],
+    image: "/properties/sanskruti.webp",
+  },
+  {
+    id: 22,
+    slug: "bestech-ananda",
+    name: "Bestech Park View Ananda",
+    developer: "Bestech Group",
+    location: "Sector 81, Gurgaon",
+    tag: "Ready to Move",
+    tagColor: "bg-emerald-100 text-emerald-700",
+    startingPrice: "₹1.5 Cr Onwards",
+    amenities: [
+      "Swimming Pool",
+"Gymnasium",
+"Club House",
+"Children's Play Area",
+"Theatre",
+"Park",
+"Amphitheatre",
+"Jogging Track",
+"Badminton Court",
+],
+    configurations: [
+      {
+        bhk: "2 BHK",
+        options: [
+          {
+            size: "1360 sq ft",
+            price: "₹1.50 - 1.55 Cr",
+            floorPlan : "/floorplans/ananda-1360.png"
+          },
+        ]
+      },
+      {
+        bhk: "3 BHK",
+        options: [
+          {
+            size: "1645 sq ft",
+            price: "₹1.70 - 1.75 Cr",
+            floorPlan : "/floorplans/ananda-1645.png"
+          },
+          {
+            size: "1660 sq ft",
+            price: "₹1.75 - 1.80 Cr",
+            floorPlan : "/floorplans/ananda-1660.png"
+          },
+          {
+            size: "1790 sq ft",
+            price: "₹2.10 - 2.15 Cr",
+            floorPlan : "/floorplans/ananda-1790.png"
+          },
+          {
+            size: "1810 sq ft",
+            price: "₹2.15 - 2.20 Cr",
+            floorPlan : "/floorplans/ananda-1810.png"
+          },
+        ]
+      },
+       {
+        bhk: "5 BHK Villa",
+        options: [
+          {
+            size: "5480 sq ft",
+            price: "₹8.45 - 8.50 Cr",
+            floorPlan : "/floorplans/ananda-5480.png"
+          },
+          {
+            size: "5840 sq ft",
+            price: "₹9.05 - 9.10 Cr",
+            floorPlan : "/floorplans/ananda-5840.png"
+          }
+        ]
+      },
+    ],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "8 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "700+ Units",
+  },
+  {
+    label: "Land Parcel",
+    value: "13 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+15",
+  },
+],
+    image: "/properties/ananda.webp",
+  },
+  {
+    id: 23,
+    slug: "microtek-greenburg",
+    name: "Microtek Greenburg",
+    developer: "Microtek Infra",
+    location: "Sector 86, Gurgaon",
+    tag: "Ready to Move",
+    tagColor: "bg-emerald-100 text-emerald-700",
+    startingPrice: "₹2 Cr Onwards",
+    amenities: [
+      "Swimming Pool",
+"Gymnasium",
+"Club House",
+"Golf Course",
+"Lounge",
+"Children's Play Area",
+"Theatre",
+"Terrace Garden",
+"Park",
+],
+    configurations: [
+      {
+        bhk: "2 BHK",
+        options: [
+          {
+            size: "1480 sq ft",
+            price: "₹1.95 - 2.00 Cr",
+            floorPlan : "/floorplans/microtek-1480.webp"
+          },
+        ]
+      },
+      {
+        bhk: "3 BHK + Servant Room",
+        options: [
+          {
+            size: "1895 sq ft",
+            price: "₹2.55 - 2.60 Cr",
+            floorPlan : "/floorplans/microtek-1895.webp"
+          },
+          {
+            size: "2285 sq ft",
+            price: "₹3.05 - 3.10 Cr",
+            floorPlan : "/floorplans/microtek-2285.webp"
+          },
+        ]
+      },
+       {
+        bhk: "4 BHK + Servant Room",
+        options: [
+          {
+            size: "3060 sq ft",
+            price: "₹4.00 - 4.05 Cr",
+            floorPlan : "/floorplans/microtek-3060.webp"
+          },
+        ]
+      },
+    ],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "12 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "700+ Units",
+  },
+  {
+    label: "Land Parcel",
+    value: "14.64 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+21",
+  },
+],
+    image: "/properties/greenburg.avif",
   },
 ];

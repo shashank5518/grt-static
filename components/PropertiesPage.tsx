@@ -12,12 +12,13 @@ const bhkOrder = [
   "2 BHK + Servant Room",
   "3 BHK",
   "3 BHK + Servant Room",
+  "4 BHK",
   "4 BHK + Servant Room",
   "4 BHK Penthouse",
-  "4 BHK Duplex",
+  "4 BHK Villa",
   "5 BHK + Servant Room",
   "5 BHK Penthouse",  
-  "5 BHK Duplex"
+  "5 BHK Villa"
 ];
 
 const bhkOptions = [
