@@ -693,7 +693,7 @@ export const properties: Property[] = [
   {
     id: 9,
     slug: "ss-coralwood",
-    name: "SS Coralwood",
+    name: "SS The Coralwood",
     developer: "SS Group",
     location: "Sector 84, Gurgaon",
     tag: "Ready to Move",
@@ -1325,5 +1325,289 @@ export const properties: Property[] = [
   },
 ],
     image: "/properties/dlf-regal-gardens.webp",
+  },
+  {
+    id: 16,
+    slug: "dlf-new-town-heights-1",
+    name: "DLF New Town Heights 1",
+    developer: "DLF",
+    location: "Sector 90, Gurgaon",
+    tag: "Ready to Move",
+    tagColor: "bg-emerald-100 text-emerald-700",
+    startingPrice: "₹1.75 Cr Onwards",
+    amenities: [
+      "Swimming Pool",
+"Gymnasium",
+"Club House",
+"Children's Play Area",
+"Park",
+"Jogging Track",
+"Squash Court",
+"Basketball Court",
+"Yoga/Meditation Area",
+],
+    configurations: [
+       {
+        bhk: "2 BHK + Servant Room",
+        options: [
+          {
+            size: "1615 sq ft",
+            price: "₹1.75 - 1.80 Cr",
+            floorPlan : "/floorplans/dlf-new-town-heights-1-1615.webp"
+          }
+        ]
+      },
+      {
+        bhk: "3 BHK + Servant Room",
+        options: [
+          {
+            size: "1930 sq ft",
+            price: "₹2.10 - 2.15 Cr",
+            floorPlan : "/floorplans/dlf-new-town-heights-1-1930.webp"
+          },
+        ]
+      },
+      {
+        bhk: "4 BHK + Servant Room",
+        options: [
+          {
+            size: "2364 sq ft",
+            price: "₹2.55 - 2.60 Cr",
+            floorPlan : "/floorplans/dlf-new-town-heights-1-2364.webp"
+          },
+          {
+            size: "2727 sq ft",
+            price: "₹3.00 - 3.05 Cr",
+            floorPlan : "/floorplans/dlf-new-town-heights-1-2727.webp"
+          },
+        ]
+      },
+    ],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "13 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "1500+ Units",
+  },
+  {
+    label: "Land Parcel",
+    value: "32.13 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+19",
+  },
+],
+    image: "/properties/dlf-new-town-heights-1.avif",
+  },
+  {
+    id: 17,
+    slug: "dlf-new-town-heights-2",
+    name: "DLF New Town Heights 2",
+    developer: "DLF",
+    location: "Sector 86, Gurgaon",
+    tag: "Ready to Move",
+    tagColor: "bg-emerald-100 text-emerald-700",
+    startingPrice: "₹1.75 Cr Onwards",
+    amenities: [
+      "Swimming Pool",
+"Gymnasium",
+"Club House",
+"Children's Play Area",
+"Park",
+"Landscape Garden",
+"Squash Court",
+"Basketball Court",
+"Yoga/Meditation Area",
+],
+    configurations: [
+       {
+        bhk: "2 BHK + Servant Room",
+        options: [
+          {
+            size: "1305 sq ft",
+            price: "₹1.45 - 1.50 Cr",
+            floorPlan : "/floorplans/dlf-new-town-heights-2-1305.webp"
+          },
+          {
+            size: "1615 sq ft",
+            price: "₹1.75 - 1.80 Cr",
+            floorPlan : "/floorplans/dlf-new-town-heights-2-1305.webp"
+          }
+        ]
+      },
+      {
+        bhk: "3 BHK + Servant Room",
+        options: [
+          {
+            size: "1760 sq ft",
+            price: "₹1.90 - 1.95 Cr",
+            floorPlan : "/floorplans/dlf-new-town-heights-2-1760.webp"
+          },
+          {
+            size: "2051 sq ft",
+            price: "₹2.25 - 2.30 Cr",
+            floorPlan : "/floorplans/dlf-new-town-heights-2-1760.webp"
+          },
+        ]
+      },
+      {
+        bhk: "4 BHK + Servant Room",
+        options: [
+          {
+            size: "2125 sq ft",
+            price: "₹2.35 - 2.40 Cr",
+            floorPlan : "/floorplans/dlf-new-town-heights-2-2125.webp"
+          },
+          {
+            size: "2505 sq ft",
+            price: "₹2.75 - 2.80 Cr",
+            floorPlan : "/floorplans/dlf-new-town-heights-2-2505.webp"
+          },
+          {
+            size: "2727 sq ft",
+            price: "₹3.00 - 3.05 Cr",
+            floorPlan : "/floorplans/dlf-new-town-heights-2-2727.webp"
+          },
+        ]
+      },
+    ],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "13 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "1200 Units",
+  },
+  {
+    label: "Land Parcel",
+    value: "29.63 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+22",
+  },
+],
+    image: "/properties/dlf-new-town-heights-2.avif",
+  },
+  {
+    id: 18,
+    slug: "dlf-new-town-heights-3",
+    name: "DLF New Town Heights 3",
+    developer: "DLF",
+    location: "Sector 91, Gurgaon",
+    tag: "Ready to Move",
+    tagColor: "bg-emerald-100 text-emerald-700",
+    startingPrice: "₹1.55 Cr Onwards",
+    amenities: [
+      "Swimming Pool",
+"Gymnasium",
+"Club House",
+"Children's Play Area",
+"Park",
+"Jogging Track",
+"Lawn Tennis Court",
+"Grocery Shop",
+],
+    configurations: [
+       {
+        bhk: "2 BHK + Servant Room",
+        options: [
+          {
+            size: "1615 sq ft",
+            price: "₹1.75 - 1.80 Cr",
+            floorPlan : "/floorplans/dlf-new-town-heights-2-1305.webp"
+          }
+        ]
+      },
+      {
+        bhk: "3 BHK + Servant Room",
+        options: [
+          {
+            size: "1760 sq ft",
+            price: "₹1.90 - 1.95 Cr",
+            floorPlan : "/floorplans/dlf-new-town-heights-2-1760.webp"
+          },
+          {
+            size: "1930 sq ft",
+            price: "₹2.10 - 2.15 Cr",
+            floorPlan : "/floorplans/dlf-new-town-heights-1-1930.webp"
+          },
+        ]
+      },
+      {
+        bhk: "4 BHK + Servant Room",
+        options: [
+          {
+            size: "2125 sq ft",
+            price: "₹2.35 - 2.40 Cr",
+            floorPlan : "/floorplans/dlf-new-town-heights-2-2125.webp"
+          },
+          {
+            size: "2364 sq ft",
+            price: "₹2.55 - 2.60 Cr",
+            floorPlan : "/floorplans/dlf-new-town-heights-1-2364.webp"
+          },
+          {
+            size: "2505 sq ft",
+            price: "₹2.75 - 2.80 Cr",
+            floorPlan : "/floorplans/dlf-new-town-heights-2-2505.webp"
+          },
+          {
+            size: "2727 sq ft",
+            price: "₹3.00 - 3.05 Cr",
+            floorPlan : "/floorplans/dlf-new-town-heights-2-2727.webp"
+          },
+        ]
+      },
+    ],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "8 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "600+ Units",
+  },
+  {
+    label: "Land Parcel",
+    value: "14.35 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+21",
+  },
+],
+    image: "/properties/dlf-new-town-heights-3.webp",
   },
 ];
