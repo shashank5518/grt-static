@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import Image from "next/image";
 
 import { properties } from "@/components/properties-data";
@@ -37,7 +38,36 @@ export default async function PropertyDetailsPage({
 
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/50" />
+        {/* Back Button */}
+<div
+  className="
+    absolute left-6 top-6 z-30
+    md:left-10 md:top-8
+  "
+>
 
+  <Link
+    href="/properties"
+    className="
+      inline-flex items-center gap-2
+      rounded-full border border-white/15
+      bg-white/10 px-5 py-2.5
+      text-sm font-semibold text-white
+      backdrop-blur-xl
+      transition-all duration-300
+      hover:bg-white/20
+      hover:shadow-lg
+    "
+  >
+
+    <span className="text-lg leading-none">
+      ←
+    </span>
+
+    Back
+
+  </Link>
+</div>
         {/* Content */}
         <div className="absolute inset-0 flex items-end">
           <div className="mx-auto w-full max-w-6xl container-px pb-12">
