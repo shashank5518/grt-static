@@ -2240,4 +2240,99 @@ export const properties: Property[] = [
 ],
     image: "/properties/godrej-air.webp",
   },
+  {
+    id: 26,
+    slug: "orris-greenopolis",
+    name: "Orris Greenopolis",
+    developer: "Orris Group",
+    location: "Sector 89, Gurgaon",
+    tag: "Ready to Move",
+    tagColor: "bg-green-100 text-green-700",
+    startingPrice: "₹1.3 Cr Onwards",
+    amenities: [
+      "Swimming Pool",
+"Gymnasium",
+"Club House",
+"Creche/Day Care",
+"Children's Play Area",
+"Park",
+"Banquet Hall",
+"Jogging Track",
+"Badminton Court",
+],
+    configurations: [
+      {
+        bhk: "2 BHK",
+        options: [
+          {
+            size: "1297 sq ft",
+            price: "₹1.30 - 1.35 Cr",
+            floorPlan : "/floorplans/greenopolis-1297.png"
+          },
+        ]
+      },
+      {
+        bhk: "2 BHK + Servant Room",
+        options: [
+          {
+            size: "1660 sq ft",
+            price: "₹1.65 - 1.70 Cr",
+            floorPlan : "/floorplans/greenopolis-1660.png"
+          },
+        ]
+      },
+      {
+        bhk: "3 BHK + Servant Room",
+        options: [
+          {
+            size: "1957 sq ft",
+            price: "₹1.70 - 1.75 Cr",
+            floorPlan : "/floorplans/greenopolis-1957.png"
+          },
+          {
+            size: "2036 sq ft",
+            price: "₹1.80 - 1.85 Cr",
+            floorPlan : "/floorplans/greenopolis-2036.png"
+          },
+        ]
+      },
+      {
+        bhk: "4 BHK + Servant Room",
+        options: [
+          {
+            size: "2750 sq ft",
+            price: "₹2.00 - 2.05 Cr",
+            floorPlan : "/floorplans/greenopolis-2750.png"
+          },
+        ]
+      },
+    ],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "28 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "2300+ Units",
+  },
+  {
+    label: "Land Bank",
+    value: "37.21 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready to Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+25",
+  },
+],
+    image: "/properties/greenopolis.webp",
+  },
 ];
