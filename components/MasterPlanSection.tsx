@@ -301,8 +301,8 @@ export function MasterPlanSection() {
   duration-300
   ease-out
 
-  hover:-translate-y-1
-  hover:scale-125
+  md:hover:-translate-y-1
+md:hover:scale-125
 
   hover:drop-shadow-[0_12px_24px_rgba(11,18,32,0.35)]
     "
@@ -312,7 +312,9 @@ export function MasterPlanSection() {
       transform: "translate(-50%, -100%)",
     }}
   >
+  <div className="scale-75 md:scale-100">
     <MapPin />
+  </div>
   </button>
 ))}
 
