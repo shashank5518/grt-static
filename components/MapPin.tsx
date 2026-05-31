@@ -1,8 +1,8 @@
 export function MapPin() {
   return (
     <svg
-      width="34"
-      height="34"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
       className="

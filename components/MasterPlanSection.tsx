@@ -196,7 +196,8 @@ export function MasterPlanSection() {
       description=""
       className="bg-slate-50"
     >
-<div className="mx-auto w-full max-w-6xl flex flex-col items-center gap-4">
+      <div className="flex flex-col items-center gap-4">
+
         {/* Controls */}
         <div className="flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 shadow-sm">
           <button
@@ -267,7 +268,7 @@ export function MasterPlanSection() {
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
         >
-          <div className="relative aspect-4/3 w-full max-w-5xl mx-auto">
+          <div className="relative aspect-4/3 w-full">
             <div
               className="relative h-full w-full"
               style={{
