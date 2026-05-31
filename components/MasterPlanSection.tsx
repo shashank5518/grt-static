@@ -1,5 +1,13 @@
 "use client";
 
+import Link from "next/link";
+
+import {
+  sectorPins,
+  sectorProperties,
+} from "./master-plan-data";
+
+import { MapPin } from "./MapPin";
 import { useRef, useState, useCallback, useEffect } from "react";
 import { SectionWrapper } from "./SectionWrapper";
 
@@ -8,6 +16,8 @@ type Point = { x: number; y: number };
 export function MasterPlanSection() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [scale, setScale] = useState(1);
+  const [activeSector, setActiveSector] =
+  useState<string | null>(null);
   const [offset, setOffset] = useState<Point>({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
   const dragStart = useRef<Point>({ x: 0, y: 0 });
@@ -244,7 +254,13 @@ export function MasterPlanSection() {
           ref={containerRef}
           className="w-full overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
           style={{ cursor: scale > 1 ? (isDragging ? "grabbing" : "grab") : "default" }}
-          onMouseDown={handleMouseDown}
+          onMouseDown={(e) => {
+  if (activeSector) {
+    setActiveSector(null);
+  }
+
+  handleMouseDown(e);
+}}
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUp}
           onMouseLeave={handleMouseLeave}
@@ -252,9 +268,9 @@ export function MasterPlanSection() {
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
         >
-          <div className="aspect-4/3 w-full">
+          <div className="relative aspect-4/3 w-full">
             <div
-              className="h-full w-full"
+              className="relative h-full w-full"
               style={{
                 transform: `translate(${offset.x}px, ${offset.y}px) scale(${scale})`,
                 transformOrigin: "center center",
@@ -270,7 +286,129 @@ export function MasterPlanSection() {
                 draggable={false}
                 style={{ imageRendering: "auto" }}
               />
+              {sectorPins.map((pin) => (
+  <button
+    key={pin.sector}
+    onClick={(e) => {
+  e.stopPropagation();
+  setActiveSector(pin.sector);
+}}
+    className="
+      absolute
+  z-20
+
+  transition-all
+  duration-300
+  ease-out
+
+  hover:-translate-y-1
+  hover:scale-125
+
+  hover:drop-shadow-[0_12px_24px_rgba(11,18,32,0.35)]
+    "
+    style={{
+      left: `${pin.x}%`,
+      top: `${pin.y}%`,
+      transform: "translate(-50%, -100%)",
+    }}
+  >
+    <MapPin />
+  </button>
+))}
+
             </div>
+            {activeSector && (
+  <div
+      onClick={(e) => e.stopPropagation()}
+
+    className="
+      absolute
+      top-5
+      right-5
+      z-40
+      w-[300px]
+      max-w-[90vw]
+      rounded-3xl
+      border
+      border-slate-200
+      bg-white/90
+      border-[color:var(--brand-900)]
+      p-4
+      shadow-2xl
+      backdrop-blur-xl
+      animate-[fadeIn_.25s_ease-out]
+    "
+  >
+
+    <div className="flex justify-between items-start">
+
+  <div>
+    <h3
+      className="
+        text-lg
+        font-bold
+        text-[var(--brand-900)]
+      "
+    >
+      {activeSector}
+    </h3>
+
+    <p
+      className="
+        mt-1
+        text-xs
+        font-medium
+        text-slate-500
+      "
+    >
+      {sectorProperties[activeSector]?.length} Projects
+    </p>
+  </div>
+
+  <button
+    onClick={() => setActiveSector(null)}
+    className="
+      text-slate-400
+      hover:text-slate-700
+      transition-colors
+    "
+  >
+    ✕
+  </button>
+
+</div>
+
+    <div className="mt-4 space-y-2">
+
+      {sectorProperties[activeSector]?.map(
+        (property) => (
+          <Link
+            key={property.slug}
+            href={`/properties/${property.slug}`}
+            className="
+              block
+              rounded-xl
+              border
+              border-slate-200
+              p-3
+              hover:bg-slate-50
+            "
+          >
+            <div className="font-semibold">
+              {property.name}
+            </div>
+
+            <div className="text-sm text-slate-500">
+              {property.startingPrice}
+            </div>
+          </Link>
+        )
+      )}
+
+    </div>
+
+  </div>
+)}
           </div>
         </div>
 
