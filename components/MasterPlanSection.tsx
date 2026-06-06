@@ -438,20 +438,39 @@ ease-out
       {sectorProperties[activeSector]?.map(
         (property) => (
           <Link
-            key={property.slug}
-            href={`/properties/${property.slug}`}
-            className="
-              block
-              rounded-xl
-              border
-              border-slate-200
-              p-3
-              hover:bg-slate-50
-            "
-          >
-            <div className="font-semibold">
-              {property.name}
-            </div>
+  key={property.slug}
+  href={`/properties/${property.slug}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    group
+    block
+    rounded-xl
+    border
+    border-slate-200
+    p-3
+    hover:bg-slate-50
+  "
+>
+            <div className="flex items-center justify-between">
+  <span className="font-semibold">
+    {property.name}
+  </span>
+
+  <svg
+    className="h-3 w-3 text-slate-400 transition-transform group-hover:translate-x-0.5"
+    viewBox="0 0 24 24"
+    fill="none"
+  >
+    <path
+      d="M7 17L17 7M17 7H9M17 7V15"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+</div>
 
             <div className="text-sm text-slate-500">
               {property.startingPrice}
