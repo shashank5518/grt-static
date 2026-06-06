@@ -187,6 +187,10 @@ export function MasterPlanSection() {
   };
 
   const zoomPercent = Math.round(scale * 100);
+  const activePin =
+  sectorPins.find(
+    pin => pin.sector === activeSector
+  );
 
   return (
     <SectionWrapper
@@ -293,19 +297,23 @@ export function MasterPlanSection() {
   e.stopPropagation();
   setActiveSector(pin.sector);
 }}
-    className="
-      absolute
+    className={`
+  absolute
   z-20
 
   transition-all
   duration-300
   ease-out
 
-  md:hover:-translate-y-1
-md:hover:scale-125
+  ${
+    activeSector && activeSector !== pin.sector
+      ? "opacity-0 pointer-events-none scale-75"
+      : "opacity-100 scale-100"
+  }
 
-  hover:drop-shadow-[0_12px_24px_rgba(11,18,32,0.35)]
-    "
+  md:hover:-translate-y-1
+  md:hover:scale-125
+`}
     style={{
       left: `${pin.x}%`,
       top: `${pin.y}%`,
@@ -319,30 +327,82 @@ md:hover:scale-125
 ))}
 
             </div>
-            {activeSector && (
+            {activeSector && activePin && (
   <div
-      onClick={(e) => e.stopPropagation()}
+  onClick={(e) => e.stopPropagation()}
+  className="
+    absolute
+    z-40
 
-    className="
-      absolute
-      top-5
-      right-5
-      z-40
-      w-[300px]
-      max-w-[90vw]
-      rounded-3xl
-      border
-      border-slate-200
-      bg-white/90
-      border-[color:var(--brand-900)]
-      p-4
-      shadow-2xl
-      backdrop-blur-xl
-      animate-[fadeIn_.25s_ease-out]
-    "
-  >
+    w-[92vw]
+    max-w-[320px]
+    w-[92vw]
+max-w-[320px]
+md:w-[300px]
 
-    <div className="flex justify-between items-start">
+    rounded-3xl
+    border
+    border-[color:var(--brand-900)]
+
+    bg-white/95
+
+    p-4
+
+    shadow-2xl
+    backdrop-blur-xl
+
+    animate-[fadeIn_.25s_ease-out]
+  "
+  style={{
+    left:
+      typeof window !== "undefined" &&
+      window.innerWidth < 768
+        ? "50%"
+        : `${activePin.x}%`,
+
+    top:
+      typeof window !== "undefined" &&
+      window.innerWidth < 768
+        ? "auto"
+        : `${activePin.y}%`,
+
+    bottom:
+      typeof window !== "undefined" &&
+      window.innerWidth < 768
+        ? "16px"
+        : "auto",
+
+    transform:
+      typeof window !== "undefined" &&
+      window.innerWidth < 768
+        ? "translateX(-50%)"
+        : "translate(30px, -50%)",
+  }}
+>
+  <div
+  className="
+    hidden
+    md:block
+
+    absolute
+    left-[-8px]
+    top-1/2
+
+    h-4
+    w-4
+
+    -translate-y-1/2
+    rotate-45
+
+    border-l
+    border-b
+
+    border-[color:var(--brand-900)]
+
+    bg-white
+  "
+/>
+  <div className="flex justify-between items-start">
 
   <div>
     <h3
@@ -410,7 +470,7 @@ md:hover:scale-125
     </div>
 
   </div>
-)}
+    )}
           </div>
         </div>
 
