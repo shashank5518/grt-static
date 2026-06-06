@@ -280,7 +280,7 @@ export function MasterPlanSection() {
               }}
             >
               <img
-                src="images/masterPlan.JPEG"
+                src="images/masterPlan.webp"
                 alt="Gurgaon Master Plan"
                 className="h-full w-full object-cover"
                 draggable={false}
