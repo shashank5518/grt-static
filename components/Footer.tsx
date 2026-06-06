@@ -28,7 +28,7 @@ export function Footer() {
                 +91 99999 82787
               </a>
               <a
-                href="mailto:sales.growthrealtech@gmail.com"
+                href="mailto:sales.growthrealtech@gmail.com?subject=Property%20Inquiry&body=Hello%20Growth%20Realtech,%0A%0AI%20am%20interested%20in%20learning%20more%20about%20your%20properties.%20Please%20share%20additional%20details,%20pricing,%20availability,%20and%20any%20relevant%20information.%0A%0AName:%20%0APhone:%20%0ACity:%20%0AProperty%20of%20Interest:%20%0A%0AThank%20you."
                 className="flex items-center gap-2 hover:text-slate-900"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0">
