@@ -37,13 +37,35 @@ export function Footer() {
                 </svg>
                 sales.growthrealtech@gmail.com
               </a>
-              <p className="flex items-start gap-2 text-slate-600">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0 mt-0.5">
-                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
-                  <circle cx="12" cy="10" r="3"/>
-                </svg>
-                AB2-104, Mapsko Casa Bella, Sector-82, Gurgaon
-              </p>
+              <a
+  href="https://maps.app.goo.gl/3aYSVswHuY8YG8yz7"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-start gap-2 text-slate-600 hover:text-slate-900 transition-colors"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="shrink-0 mt-0.5"
+  >
+    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+    <circle cx="12" cy="10" r="3" />
+  </svg>
+
+  <div>
+    <span>AB2-104, Mapsko Casa Bella, Sector-82, Gurgaon</span>
+    <p className="text-xs text-slate-500 mt-1">
+      Get directions →
+    </p>
+  </div>
+</a>
             </div>
           </div>
 

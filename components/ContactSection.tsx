@@ -29,7 +29,7 @@ export function ContactSection() {
               <span className="text-slate-500">Tap to call</span>
             </a>
             <a
-              href="mailto:sales.growthrealtech@gmail.com"
+              href="mailto:sales.growthrealtech@gmail.com?subject=Property%20Inquiry&body=Hello%20Growth%20Realtech,%0A%0AI%20am%20interested%20in%20learning%20more%20about%20your%20properties.%20Please%20share%20additional%20details,%20pricing,%20availability,%20and%20any%20relevant%20information.%0A%0AName:%20%0APhone:%20%0ACity:%20%0AProperty%20of%20Interest:%20%0A%0AThank%20you."
               className="flex items-center justify-between rounded-2xl bg-white px-5 py-4 text-sm font-semibold text-slate-900 shadow-sm transition hover:shadow-md"
             >
               <span>Email Us</span>
