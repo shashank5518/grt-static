@@ -258,13 +258,7 @@ export function MasterPlanSection() {
           ref={containerRef}
           className="w-full overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
           style={{ cursor: scale > 1 ? (isDragging ? "grabbing" : "grab") : "default" }}
-          onMouseDown={(e) => {
-  if (activeSector) {
-    setActiveSector(null);
-  }
-
-  handleMouseDown(e);
-}}
+          onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUp}
           onMouseLeave={handleMouseLeave}
@@ -301,14 +295,13 @@ export function MasterPlanSection() {
   absolute
   z-20
 
-  transition-all
-  duration-300
-  ease-out
+  transition-opacity
+  duration-200
 
   ${
     activeSector && activeSector !== pin.sector
-      ? "opacity-0 pointer-events-none scale-75"
-      : "opacity-100 scale-100"
+      ? "opacity-20 pointer-events-none"
+      : "opacity-100"
   }
 
   md:hover:-translate-y-1
@@ -332,10 +325,8 @@ export function MasterPlanSection() {
   onClick={(e) => e.stopPropagation()}
   className="
     absolute
+    overflow-visible
     z-40
-
-    w-[92vw]
-    max-w-[320px]
     w-[92vw]
 max-w-[320px]
 md:w-[300px]
@@ -348,10 +339,12 @@ md:w-[300px]
 
     p-4
 
-    shadow-2xl
+    shadow-[0_20px_60px_rgba(11,18,32,0.18)]
     backdrop-blur-xl
 
-    animate-[fadeIn_.25s_ease-out]
+    transition-all
+duration-200
+ease-out
   "
   style={{
     left:
