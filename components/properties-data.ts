@@ -2146,8 +2146,8 @@ export const properties: Property[] = [
     name: "Godrej Air",
     developer: "Godrej",
     location: "Sector 85, Gurgaon",
-    tag: "New Launch",
-    tagColor: "bg-blue-100 text-blue-700",
+    tag: "Under Construction",
+    tagColor: "bg-amber-100 text-amber-700",
     startingPrice: "₹1.5 Cr Onwards",
     amenities: [
       "Swimming Pool",
