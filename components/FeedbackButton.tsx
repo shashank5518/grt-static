@@ -5,22 +5,32 @@ export function FeedbackButton() {
     <Link
       href="/feedback"
       target="_blank"
-      className="
-        fixed
-        bottom-24
-        right-6
+
+      className="fixed
+        bottom-20
+        right-5
         z-50
+        inline-flex
+        h-12
+        items-center
+        justify-center
         rounded-full
-        bg-slate-900
+        border
+        border-slate-200
+        bg-white
         px-5
-        py-3
         text-sm
         font-semibold
-        text-white
+        text-slate-700
         shadow-lg
-        hover:scale-105
-        transition
-      "
+        transition-all
+        hover:border-slate-300
+        hover:bg-slate-50
+        hover:text-slate-900
+        focus:outline-none
+        focus:ring-4
+        focus:ring-slate-300/25
+"
     >
       Feedback
     </Link>
