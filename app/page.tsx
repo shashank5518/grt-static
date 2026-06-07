@@ -9,6 +9,7 @@ import { VisionSection } from "@/components/VisionSection";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { MasterPlanSection } from "@/components/MasterPlanSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
+import { FeedbackButton } from "@/components/FeedbackButton";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <MasterPlanSection />
       </main>
       <WhatsAppButton />
+      <FeedbackButton />
     </div>
   );
 }
