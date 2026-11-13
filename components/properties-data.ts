@@ -2227,7 +2227,7 @@ export const properties: Property[] = [
   },
   {
     label: "Possession",
-    value: "Expected 2029",
+    value: "Ready to Move",
   },
   {
     label: "RERA Status",
