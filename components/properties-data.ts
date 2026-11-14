@@ -2148,7 +2148,7 @@ export const properties: Property[] = [
     location: "Sector 85, Gurgaon",
     tag: "Ready to Move",
     tagColor: "bg-emerald-100 text-emerald-700",
-    startingPrice: "₹1.5 Cr Onwards",
+    startingPrice: "₹1.85 Cr Onwards",
     amenities: [
       "Centralized Air Filtration Units",
       "Dedicated Green Areas",
