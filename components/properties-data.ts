@@ -2150,6 +2150,8 @@ export const properties: Property[] = [
     tagColor: "bg-emerald-100 text-emerald-700",
     startingPrice: "₹1.5 Cr Onwards",
     amenities: [
+      "Centralized Air Filtration Units",
+      "Dedicated Green Areas",
       "Swimming Pool",
 "Gymnasium",
 "Club House",
