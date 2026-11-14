@@ -2164,16 +2164,6 @@ export const properties: Property[] = [
 ],
     configurations: [
       {
-        bhk: "1 BHK",
-        options: [
-          {
-            size: "955 sq ft",
-            price: "₹1.45 - 1.50 Cr",
-            floorPlan : "/floorplans/godrej-air-955.webp"
-          },
-        ]
-      },
-      {
         bhk: "2 BHK",
         options: [
           {
