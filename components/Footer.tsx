@@ -38,7 +38,7 @@ export function Footer() {
                 sales.growthrealtech@gmail.com
               </a>
               <a
-  href="https://maps.app.goo.gl/3aYSVswHuY8YG8yz7"
+  href="https://www.google.com/maps/dir/?api=1&destination=28.393574%2C76.9629729&travelmode=driving"
   target="_blank"
   rel="noopener noreferrer"
   className="flex items-start gap-2 text-slate-600 hover:text-slate-900 transition-colors"
