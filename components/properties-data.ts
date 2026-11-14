@@ -2177,8 +2177,8 @@ export const properties: Property[] = [
         bhk: "2 BHK",
         options: [
           {
-            size: "1400 sq ft",
-            price: "₹2.10 - 2.15 Cr",
+            size: "1426 sq ft",
+            price: "₹1.90 - 1.95 Cr",
             floorPlan : "/floorplans/godrej-air-1400.webp"
           },
         ]
@@ -2187,8 +2187,8 @@ export const properties: Property[] = [
         bhk: "3 BHK",
         options: [
           {
-            size: "1830 sq ft",
-            price: "₹2.75 - 2.80 Cr",
+            size: "1829 sq ft",
+            price: "₹2.50 - 2.60 Cr",
             floorPlan : "/floorplans/godrej-air-1830.webp"
           },
         ]
@@ -2197,8 +2197,8 @@ export const properties: Property[] = [
         bhk: "3 BHK + Servant Room",
         options: [
           {
-            size: "2130 sq ft",
-            price: "₹3.20 - 3.25 Cr",
+            size: "2129 sq ft",
+            price: "₹2.90 - 3.00 Cr",
             floorPlan : "/floorplans/godrej-air-2130.webp"
           },
         ]
@@ -2207,8 +2207,8 @@ export const properties: Property[] = [
         bhk: "4 BHK + Servant Room",
         options: [
           {
-            size: "2600 sq ft",
-            price: "₹3.90 - 3.95 Cr",
+            size: "2599 sq ft",
+            price: "₹3.55 - 3.65 Cr",
             floorPlan : "/floorplans/godrej-air-2600.webp"
           },
         ]
@@ -2221,7 +2221,7 @@ export const properties: Property[] = [
   },
   {
     label: "Total Units",
-    value: "600+ Units",
+    value: "600 Units",
   },
   {
     label: "Land Bank",
