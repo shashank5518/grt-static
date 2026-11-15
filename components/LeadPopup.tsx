@@ -245,29 +245,45 @@ export function LeadPopup() {
               <span className="mb-2 block text-sm font-semibold text-slate-800">
                 What are you looking for?
               </span>
-              <select
-                name="property_interest"
-                defaultValue=""
-                className="h-12 w-full rounded-xl border border-slate-200 bg-white px-4 text-base text-slate-700 shadow-sm outline-none transition focus:border-(--brand-700) focus:ring-4 focus:ring-slate-900/5"
-              >
-                <option value="" disabled>
-                  Select your requirement
-                </option>
-                <option value="Residential Property">
-                  Residential Property
-                </option>
-                <option value="Commercial Property">
-                  Commercial Property
-                </option>
-                <option value="Plots / Land">Plots / Land</option>
-                <option value="Rental Property">Rental Property</option>
-                <option value="Real Estate Investment">
-                  Real Estate Investment
-                </option>
-                <option value="General Consultation">
-                  General Consultation
-                </option>
-              </select>
+              <div className="relative">
+  <select
+    name="property_interest"
+    defaultValue=""
+    className="h-12 w-full appearance-none rounded-xl border border-slate-200 bg-white px-4 pr-12 text-base text-slate-700 shadow-sm outline-none transition focus:border-(--brand-700) focus:ring-4 focus:ring-slate-900/5"
+  >
+    <option value="" disabled>
+      Select your requirement
+    </option>
+    <option value="Residential Property">
+      Residential Property
+    </option>
+    <option value="Commercial Property">
+      Commercial Property
+    </option>
+    <option value="Plots / Land">Plots / Land</option>
+    <option value="Rental Property">Rental Property</option>
+    <option value="Real Estate Investment">
+      Real Estate Investment
+    </option>
+    <option value="General Consultation">
+      General Consultation
+    </option>
+  </select>
+
+  <svg
+    aria-hidden="true"
+    className="pointer-events-none absolute right-5 top-1/2 h-5 w-5 -translate-y-1/2 text-slate-600"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="m6 9 6 6 6-6" />
+  </svg>
+</div>
             </label>
 
             <label className="flex items-start gap-3 pt-1 sm:col-span-2">
