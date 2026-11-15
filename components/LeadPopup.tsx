@@ -113,10 +113,10 @@ export function LeadPopup() {
         aria-modal="true"
         aria-labelledby="lead-popup-title"
         aria-describedby="lead-popup-description"
-        className="relative my-auto w-full max-w-lg overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-2xl animate-in fade-in zoom-in-95 duration-300"
+        className="relative my-auto grid w-full max-w-5xl grid-cols-1 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-2xl animate-in fade-in zoom-in-95 duration-300 md:grid-cols-[0.9fr_1.1fr]"
       >
         {/* Header */}
-        <div className="relative bg-(--brand-900) px-6 py-8 text-white sm:px-9 sm:py-9">
+        <div className="relative flex flex-col justify-center bg-(--brand-900) px-6 py-7 text-white sm:px-9 sm:py-9 md:px-10">
           <button
             type="button"
             onClick={closePopup}
@@ -149,7 +149,7 @@ export function LeadPopup() {
         </div>
 
         {/* Form */}
-        <div className="max-h-[65dvh] overflow-y-auto overscroll-contain px-6 py-7 sm:px-9 sm:py-8">
+        <div className="px-6 py-6 sm:px-8 sm:py-7">
           <div className="mb-6 flex flex-wrap gap-2">
             <span className="rounded-full bg-slate-100 px-3 py-1.5 text-xs font-medium text-slate-700">
               Free consultation
@@ -163,7 +163,7 @@ export function LeadPopup() {
             action={`https://formsubmit.co/sales.growthrealtech@gmail.com`}
             method="POST"
             onSubmit={handleSubmit}
-            className="space-y-4"
+            className="grid grid-cols-1 gap-x-5 gap-y-4 sm:grid-cols-2"
           >
             <input
               type="hidden"
@@ -270,7 +270,7 @@ export function LeadPopup() {
               </select>
             </label>
 
-            <label className="flex items-start gap-3 pt-1">
+            <label className="flex items-start gap-3 pt-1 sm:col-span-2">
               <input
                 type="checkbox"
                 name="contact_consent"
@@ -286,12 +286,12 @@ export function LeadPopup() {
 
             <button
               type="submit"
-              className="flex h-13 w-full items-center justify-center rounded-full bg-(--brand-900) px-6 text-sm font-semibold text-white shadow-sm transition duration-300 hover:bg-(--brand-800) hover:shadow-md focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-slate-900/20 active:scale-[0.99]"
+              className="flex h-13 w-full items-center justify-center rounded-full bg-(--brand-900) px-6 text-sm font-semibold text-white shadow-sm transition duration-300 hover:bg-(--brand-800) hover:shadow-md focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-slate-900/20 active:scale-[0.99] sm:col-span-2"
             >
               Get Free Consultation
             </button>
 
-            <p className="text-center text-xs leading-5 text-slate-400">
+            <p className="text-center text-xs leading-5 text-slate-400 sm:col-span-2">
               Your information will only be used to respond to your enquiry.
             </p>
           </form>
