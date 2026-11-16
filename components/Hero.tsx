@@ -23,29 +23,22 @@ export function Hero() {
             <div className="max-w-2xl">
               
               <p className="inline-flex items-center rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs font-semibold tracking-wide text-white/90 backdrop-blur">
-                Trusted property consulting • Site visits • Investment guidance
+                CURATED PROPERTIES • GURGAON REAL ESTATE • BUYER ADVISORY
               </p>
               <h1 className="mt-5 text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl">
-                Premium Properties in{" "}
+                Find the Right Property in {" "}
                 <span className="text-white/90">Gurgaon</span>
               </h1>
               <p className="mt-5 max-w-xl text-base leading-7 text-white/85 sm:text-lg">
-                Helping you find the right investment opportunity — with clear
-                advice, curated inventory, and end-to-end support.
+                Explore carefully selected homes and investment opportunities across Gurgaon's most sought-after locations, with expert guidance from site visit to possession.
               </p>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
                 <a
-                  href="tel:+919999982787"
-                  className="inline-flex h-12 items-center justify-center rounded-full bg-white px-6 text-sm font-semibold text-(--brand-900) shadow-sm transition hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-white/40"
-                >
-                  Call Now
-                </a>
-                <a
                   href="https://wa.me/919999982787?text=Hi%20I%27m%20interested%20in%20properties%20in%20Gurgaon."
                   target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex h-12 items-center justify-center rounded-full border border-white/20 bg-white/10 px-6 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white/30"
+                  rel="noopener noreferrer"
+                  className="inline-flex h-12 items-center justify-center rounded-full bg-white px-6 text-sm font-semibold text-(--brand-900) shadow-sm transition hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-white/40"
                 >
                   WhatsApp Us
                 </a>
@@ -56,10 +49,10 @@ export function Hero() {
               <dl className="mt-10 grid max-w-xl grid-cols-2 gap-6 sm:grid-cols-3">
                 <div className="rounded-2xl border border-white/15 bg-white/5 p-4 backdrop-blur">
                   <dt className="text-xs font-semibold tracking-wide text-white/70">
-                    Response
+                    Local
                   </dt>
                   <dd className="mt-1 text-sm font-semibold text-white">
-                    Under 10 minutes
+                    Market Knowledge
                   </dd>
                 </div>
                 <div className="rounded-2xl border border-white/15 bg-white/5 p-4 backdrop-blur">
@@ -67,15 +60,15 @@ export function Hero() {
                     Focus
                   </dt>
                   <dd className="mt-1 text-sm font-semibold text-white">
-                    Premium + investment
+                    End-to-End Assistance
                   </dd>
                 </div>
                 <div className="rounded-2xl border border-white/15 bg-white/5 p-4 backdrop-blur">
                   <dt className="text-xs font-semibold tracking-wide text-white/70">
-                    Support
+                    Curated
                   </dt>
                   <dd className="mt-1 text-sm font-semibold text-white">
-                    From visit to closing
+                    Property Options
                   </dd>
                 </div>
               </dl>

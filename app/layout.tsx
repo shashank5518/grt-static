@@ -3,6 +3,7 @@ import { Geist} from "next/font/google";
 import Image from "next/image";
 import "./globals.css";
 import { Footer } from "@/components/Footer";
+import { LeadPopup } from "@/components/LeadPopup";
 
 const geist = Geist({
   variable: "--font-sans",
@@ -11,7 +12,7 @@ const geist = Geist({
 });
 
 // ✅ When you have your domain, replace this with: "https://growthrealtech.com"
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://growthrealtech.vercel.app";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://grt-static.vercel.app";
 
 const siteName = "Growth Realtech";
 const siteDescription =
@@ -75,6 +76,7 @@ export default function RootLayout({
     data-scroll-behavior="smooth">
       <body className="min-h-full flex flex-col bg-white text-slate-900">
         {children}
+        <LeadPopup />
 
         {/* Fixed watermark — bottom-left, non-interactive */}
         <div

@@ -1,13 +1,10 @@
 import { AboutSection } from "@/components/AboutSection";
 import { AreaSection } from "@/components/AreaSection";
 import { ContactSection } from "@/components/ContactSection";
-import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
 import { TeamSection } from "@/components/TeamSection";
-import { VisionSection } from "@/components/VisionSection";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
-import { MasterPlanSection } from "@/components/MasterPlanSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { FeedbackButton } from "@/components/FeedbackButton";
 import { FeaturedProperties } from "@/components/FeaturedProperties";
@@ -21,11 +18,9 @@ export default function Home() {
         <FeaturedProperties />
         <AreaSection />
         <AboutSection />
-        <TeamSection />
         <TestimonialsSection />
-        <VisionSection />
+        <TeamSection />
         <ContactSection />
-        <MasterPlanSection />
       </main>
       <WhatsAppButton />
       <FeedbackButton />
