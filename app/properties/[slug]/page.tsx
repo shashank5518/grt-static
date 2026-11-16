@@ -86,17 +86,63 @@ export default async function PropertyDetailsPage({
               {property.location} · {property.developer}
             </p>
 
-            <div className="mt-6 inline-flex rounded-2xl bg-white/10 px-5 py-3 backdrop-blur-xl border border-white/10">
-              <div>
-                <p className="text-xs text-white/60">
-                  Starting Price
-                </p>
+            {/* Starting Price + Enquiry CTA */}
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-stretch">
 
-                <p className="mt-1 text-lg font-bold text-white">
-                  {property.startingPrice}
-                </p>
+              {/* Starting Price */}
+              <div
+                className="
+                  flex min-h-[96px] w-full shrink-0 items-center
+                  rounded-2xl border border-white/15
+                  bg-white/10 px-6 py-4
+                  backdrop-blur-xl
+                  sm:w-[290px] sm:flex-none
+                "
+              >
+                <div>
+                  <p className="text-xs font-medium tracking-wide text-white/65">
+                    Starting Price
+                  </p>
+
+                  <p className="mt-1 text-lg font-bold tracking-tight text-white">
+                    {property.startingPrice}
+                  </p>
+                </div>
               </div>
+
+              {/* Enquire Now */}
+              <a
+                href={`https://wa.me/919999982787?text=${encodeURIComponent(
+                  `Hi, I'm interested in ${property.name}. Please share more details and available options.`
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Enquire about ${property.name} on WhatsApp`}
+                className="
+                  group inline-flex min-h-[96px] w-full shrink-0
+                  items-center justify-center gap-3
+                  sm:w-[290px] sm:flex-none
+                  rounded-2xl border border-white/20
+                  bg-white/15 px-6 py-4
+                  font-sans text-lg font-semibold tracking-tight text-white
+                  shadow-[0_8px_30px_rgba(0,0,0,0.12)]
+                  backdrop-blur-xl
+                  transition-all duration-300
+                  hover:-translate-y-0.5 hover:border-white/35
+                  hover:bg-white/25 hover:shadow-lg
+                  focus-visible:outline-none focus-visible:ring-2
+                  focus-visible:ring-white focus-visible:ring-offset-2
+                "
+              >
+                <span>Enquire Now</span>
+
+                <span className="text-xl font-normal text-white/80 transition-transform duration-300 group-hover:translate-x-1">
+                  →
+                </span>
+              </a>
+
             </div>
+
           </div>
           {/* Floating Logo */}
 <div
