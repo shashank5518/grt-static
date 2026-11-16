@@ -10,6 +10,7 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { MasterPlanSection } from "@/components/MasterPlanSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { FeedbackButton } from "@/components/FeedbackButton";
+import { FeaturedProperties } from "@/components/FeaturedProperties";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Navbar />
       <main className="flex-1">
         <Hero />
+        <FeaturedProperties />
         <AreaSection />
         <AboutSection />
         <TeamSection />

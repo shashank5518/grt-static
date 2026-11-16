@@ -1,5 +1,5 @@
-import type { Metadata } from "next";
-import { Geist, Inter } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Geist} from "next/font/google";
 import Image from "next/image";
 import "./globals.css";
 import { Footer } from "@/components/Footer";
@@ -59,6 +59,11 @@ export const metadata: Metadata = {
     apple: "/icon.png",
   },
 };
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#0b1220",
+};
 
 export default function RootLayout({
   children,
@@ -73,17 +78,17 @@ export default function RootLayout({
 
         {/* Fixed watermark — bottom-left, non-interactive */}
         <div
-          className="pointer-events-none fixed bottom-5 left-5 z-40 select-none"
-          aria-hidden="true"
-        >
-          <Image
-            src="/images/new-logo-transparent.png"
-            alt="Growth Realtech"
-            width={64}
-            height={64}
-            className="opacity-[0.15] mix-blend-multiply"
-          />
-        </div>
+  className="pointer-events-none fixed bottom-4 left-3 z-40 hidden select-none sm:block"
+  aria-hidden="true"
+>
+  <Image
+    src="/images/new-logo-transparent.png"
+    alt=""
+    width={64}
+    height={64}
+    className="opacity-[0.15] mix-blend-multiply"
+  />
+</div>
               <Footer />
 
       </body>

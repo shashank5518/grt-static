@@ -6,12 +6,11 @@ import { useEffect, useMemo, useState } from "react";
 
 const navLinks = [
   { href: "#home", label: "Home" },
+  { href: "#featured-properties", label: "Featured Properties" },
   { href: "#area", label: "Area" },
   { href: "#about", label: "About" },
   { href: "#team", label: "Team" },
-  { href: "#vision", label: "Vision" },
   { href: "#contact", label: "Contact" },
-  { href: "#master-plan", label: "Master Plan" },
 ] as const;
 
 function MenuIcon({ open }: { open: boolean }) {
@@ -46,10 +45,6 @@ export function Navbar({
 }) {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState<string>("#home");
-  const [indicatorStyle, setIndicatorStyle] = useState({
-  left: 0,
-  width: 0,
-});
 
   const close = useMemo(() => () => setOpen(false), []);
 
@@ -92,46 +87,13 @@ export function Navbar({
   };
 }, []);
 
-
-// 2. Indicator movement (SEPARATE hook)
-useEffect(() => {
-  const sections = navLinks
-    .map((l) => document.querySelector(l.href))
-    .filter((el): el is Element => el !== null);
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActive(`#${entry.target.id}`);
-        }
-      });
-    },
-    {
-      root: null,
-      rootMargin: "-40% 0px -50% 0px",
-      threshold: 0,
-    }
-  );
-
-  sections.forEach((section) => {
-    observer.observe(section);
-  });
-
-  return () => {
-    sections.forEach((section) => {
-      observer.unobserve(section);
-    });
-  };
-}, []);
-
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur supports-backdrop-filter:bg-white/70">
       <div className="mx-auto max-w-6xl container-px">
         <div className="flex h-17.5 md:h-20 items-center justify-between">
           <Link
             href="#home"
-            className="flex items-center gap-2 ml-6 md:ml-10 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500/40"
+            className="flex min-w-0 items-center gap-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500/40"
             onClick={close}
             aria-label={`${brand} home`}
           >
@@ -145,15 +107,7 @@ useEffect(() => {
 />
           </Link>
 
-          <nav className="relative hidden items-center gap-7 md:flex">
-  {/* Sliding indicator */}
-  <span
-  className="absolute bottom-0 h-0.5 bg-(--brand-900) transition-all duration-300 ease-in-out"
-  style={{
-    left: indicatorStyle.left,
-    width: indicatorStyle.width,
-  }}
-/>
+          <nav className="relative hidden items-center gap-7 xl:flex">
 
   {navLinks.map((l) => (
     <Link
@@ -179,7 +133,7 @@ useEffect(() => {
   ))}
 </nav>
 
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden xl:flex items-center gap-3">
             <a
               href="tel:+919999982787"
               className="inline-flex items-center justify-center rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-900 hover:bg-slate-50 transition"
@@ -189,7 +143,7 @@ useEffect(() => {
             <a
               href="https://wa.me/919999982787"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-full bg-(--brand-900) px-4 py-2 text-sm font-semibold text-white hover:bg-(--brand-800) transition shadow-sm"
             >
               WhatsApp
@@ -198,9 +152,10 @@ useEffect(() => {
 
           <button
             type="button"
-            className="md:hidden inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white hover:bg-slate-50 transition focus:outline-none focus:ring-2 focus:ring-blue-500/30"
+            className="xl:hidden inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white hover:bg-slate-50 transition focus:outline-none focus:ring-2 focus:ring-blue-500/30"
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
+            aria-controls="mobile-navigation"
             onClick={() => setOpen((v) => !v)}
           >
             <MenuIcon open={open} />
@@ -209,7 +164,7 @@ useEffect(() => {
       </div>
 
       {open ? (
-        <div className="md:hidden border-t border-slate-200/70 bg-white">
+        <div id="mobile-navigation" className="xl:hidden border-t border-slate-200/70 bg-white">
           <div className="mx-auto max-w-6xl container-px py-3">
             <div className="flex flex-col gap-1">
               {navLinks.map((l) => (
@@ -236,7 +191,7 @@ useEffect(() => {
                 <a
                   href="https://wa.me/919999982787"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center rounded-xl bg-(--brand-900) px-4 py-3 text-sm font-semibold text-white hover:bg-(--brand-800) transition"
                 >
                   WhatsApp
