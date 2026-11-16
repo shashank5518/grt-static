@@ -6,6 +6,8 @@ import { properties, type Property } from "./properties-data";
 const featuredSlugs = [
   "mapsko-casa-bella",
   "mapsko-royale-ville",
+  "mapsko-paradise",
+  "mapsko-mount-ville",
   "ss-coralwood",
   "spaze-privy-at4",
 ];
@@ -31,7 +33,7 @@ function FeaturedPropertyCard({ property }: { property: Property }) {
           src={property.image}
           alt={property.name}
           fill
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover transition-transform duration-700 group-hover:scale-105"
         />
 
@@ -48,12 +50,6 @@ function FeaturedPropertyCard({ property }: { property: Property }) {
   height={29}
   className="object-contain"
 />
-
-{property.slug === "mapsko-casa-bella" && (
-  <span className="mt-0.5 text-[7px] font-bold tracking-[0.12em] text-white/90">
-    SPECIALITY
-  </span>
-)}
 
         </div>
 
@@ -176,7 +172,7 @@ export function FeaturedProperties() {
         </div>
 
         {/* Property grid */}
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {featuredProperties.map((property) => (
             <FeaturedPropertyCard
               key={property.id}
