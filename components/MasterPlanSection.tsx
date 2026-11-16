@@ -45,6 +45,12 @@ export function MasterPlanSection() {
   // Wheel zoom — zoom toward cursor position
   const handleWheel = useCallback(
     (e: WheelEvent) => {
+            if (
+        e.target instanceof HTMLElement &&
+        e.target.closest("[data-map-popup]")
+      ) {
+        return;
+      }
       e.preventDefault();
       const container = containerRef.current;
       if (!container) return;
@@ -119,6 +125,12 @@ export function MasterPlanSection() {
   });
 
   const handleTouchStart = (e: React.TouchEvent) => {
+    if (
+      e.target instanceof HTMLElement &&
+      e.target.closest("[data-map-popup]")
+    ) {
+      return;
+    }
     if (e.touches.length === 2) {
       lastTouchDist.current = getTouchDist(e.touches);
       lastTouchMid.current = getTouchMid(e.touches);
@@ -131,9 +143,22 @@ export function MasterPlanSection() {
     }
   };
 
+  
   const handleTouchMove = (e: React.TouchEvent) => {
-    e.preventDefault();
+        if (
+      e.target instanceof HTMLElement &&
+      e.target.closest("[data-map-popup]")
+    ) {
+      return;
+    }
+    if (e.touches.length === 2) {
+      e.preventDefault();
+    } else if (e.touches.length === 1 && isDragging) {
+      e.preventDefault();
+    }
+
     if (e.touches.length === 2 && lastTouchDist.current && lastTouchMid.current) {
+
       const container = containerRef.current;
       if (!container) return;
       const rect = container.getBoundingClientRect();
@@ -194,10 +219,10 @@ export function MasterPlanSection() {
 
   return (
     <SectionWrapper
-      id="master-plan"
-      eyebrow="Master Plan"
-      title="Gurgaon Master Plan"
-      description=""
+      id="new-gurgaon"
+      eyebrow="Explore the Location"
+      title="Discover New Gurgaon"
+      description="Explore residential developments and available properties across New Gurgaon's key sectors, from Sector 76 to Sector 95."
       className="bg-slate-50"
     >
       <div className="flex flex-col items-center gap-4">
@@ -256,7 +281,7 @@ export function MasterPlanSection() {
         {/* Image Container */}
         <div
           ref={containerRef}
-          className="w-full overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
+          className="mx-auto w-[92%] max-w-[460px] overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
           style={{ cursor: scale > 1 ? (isDragging ? "grabbing" : "grab") : "default" }}
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
@@ -266,9 +291,11 @@ export function MasterPlanSection() {
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
         >
-          <div className="relative aspect-4/3 w-full">
+        
+          {/* Portrait map container */}
+          <div className="relative w-full">
             <div
-              className="relative h-full w-full"
+              className="relative w-full"
               style={{
                 transform: `translate(${offset.x}px, ${offset.y}px) scale(${scale})`,
                 transformOrigin: "center center",
@@ -278,15 +305,17 @@ export function MasterPlanSection() {
               }}
             >
               <img
-                src="images/masterPlan.webp"
-                alt="Gurgaon Master Plan"
-                className="h-full w-full object-cover"
+                src="/images/masterPlan.webp"
+                alt="New Gurgaon sector map covering Sectors 76 to 95"
+                className="block h-auto w-full"
                 draggable={false}
-                style={{ imageRendering: "auto" }}
               />
               {sectorPins.map((pin) => (
   <button
     key={pin.sector}
+    aria-label={`Show properties in ${pin.sector}`}
+aria-pressed={activeSector === pin.sector}
+title={pin.sector}
     onClick={(e) => {
   e.stopPropagation();
   setActiveSector(pin.sector);
@@ -300,7 +329,7 @@ export function MasterPlanSection() {
 
   ${
     activeSector && activeSector !== pin.sector
-      ? "opacity-20 pointer-events-none"
+      ? "opacity-40"
       : "opacity-100"
   }
 
@@ -320,169 +349,92 @@ export function MasterPlanSection() {
 ))}
 
             </div>
-            {activeSector && activePin && (
-  <div
-  onClick={(e) => e.stopPropagation()}
-  className="
-    absolute
-    overflow-visible
-    z-40
-    w-[92vw]
-max-w-[320px]
-md:w-[300px]
 
-    rounded-3xl
-    border
-    border-[color:var(--brand-900)]
+            {/* Smoothly expanding sector details */}
+            <div
+              aria-hidden={!activeSector || !activePin}
+              className={`grid transition-[grid-template-rows,opacity] duration-300 ease-out ${
+                activeSector && activePin
+                  ? "grid-rows-[1fr] opacity-100"
+                  : "grid-rows-[0fr] opacity-0 pointer-events-none"
+              }`}
+            >
+              <div className="min-h-0 overflow-hidden">
+                {activeSector && activePin && (
+                  <section
+                  data-map-popup
+                    aria-label={`Properties in ${activeSector}`}
+                    className="m-3 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
+                  >
+                    {/* Popup header */}
+                    <div className="flex min-h-[68px] items-center justify-between gap-3 px-4 py-3.5 border-b border-slate-100">
+                      <div className="min-w-0">
+                        <h3 className="text-[15px] font-semibold tracking-tight text-[var(--brand-900)]">
+                          {activeSector}
+                        </h3>
+                        <p className="mt-1 text-xs text-slate-500">
+                          {sectorProperties[activeSector]?.length} properties available
+                        </p>
+                      </div>
 
-    bg-white/95
+                      <button
+                        type="button"
+                        onClick={() => setActiveSector(null)}
+                        aria-label="Close sector properties"
+                        className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--brand-700)]"
+                      >
+                        <svg
+                          viewBox="0 0 20 20"
+                          className="h-4 w-4"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="1.8"
+                          strokeLinecap="round"
+                        >
+                          <path d="m5 5 10 10M15 5 5 15" />
+                        </svg>
+                      </button>
+                    </div>
 
-    p-4
+                    {/* Property list */}
+                    <div className="max-h-[240px] divide-y divide-slate-100 overflow-y-auto overscroll-contain">
+                      {sectorProperties[activeSector]?.map((property) => (
+                        <Link
+                          key={property.slug}
+                          href={`/properties/${property.slug}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="group flex items-center justify-between gap-3 px-3.5 py-3 transition-colors hover:bg-slate-50 focus-visible:bg-slate-50 focus-visible:outline-none"
+                        >
+                          <div className="min-w-0">
+                            <p className="text-sm font-semibold leading-5 text-slate-800 transition-colors group-hover:text-[var(--brand-900)]">
+                              {property.name}
+                            </p>
+                            <p className="mt-1 text-xs text-slate-500">
+                              {property.startingPrice}
+                            </p>
+                          </div>
 
-    shadow-[0_20px_60px_rgba(11,18,32,0.18)]
-    backdrop-blur-xl
-
-    transition-all
-duration-200
-ease-out
-  "
-  style={{
-    left:
-      typeof window !== "undefined" &&
-      window.innerWidth < 768
-        ? "50%"
-        : `${activePin.x}%`,
-
-    top:
-      typeof window !== "undefined" &&
-      window.innerWidth < 768
-        ? "auto"
-        : `${activePin.y}%`,
-
-    bottom:
-      typeof window !== "undefined" &&
-      window.innerWidth < 768
-        ? "16px"
-        : "auto",
-
-    transform:
-      typeof window !== "undefined" &&
-      window.innerWidth < 768
-        ? "translateX(-50%)"
-        : "translate(30px, -50%)",
-  }}
->
-  <div
-  className="
-    hidden
-    md:block
-
-    absolute
-    left-[-8px]
-    top-1/2
-
-    h-4
-    w-4
-
-    -translate-y-1/2
-    rotate-45
-
-    border-l
-    border-b
-
-    border-[color:var(--brand-900)]
-
-    bg-white
-  "
-/>
-  <div className="flex justify-between items-start">
-
-  <div>
-    <h3
-      className="
-        text-lg
-        font-bold
-        text-[var(--brand-900)]
-      "
-    >
-      {activeSector}
-    </h3>
-
-    <p
-      className="
-        mt-1
-        text-xs
-        font-medium
-        text-slate-500
-      "
-    >
-      {sectorProperties[activeSector]?.length} Projects
-    </p>
-  </div>
-
-  <button
-    onClick={() => setActiveSector(null)}
-    className="
-      text-slate-400
-      hover:text-slate-700
-      transition-colors
-    "
-  >
-    ✕
-  </button>
-
-</div>
-
-    <div className="mt-4 space-y-2">
-
-      {sectorProperties[activeSector]?.map(
-        (property) => (
-          <Link
-  key={property.slug}
-  href={`/properties/${property.slug}`}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="
-    group
-    block
-    rounded-xl
-    border
-    border-slate-200
-    p-3
-    hover:bg-slate-50
-  "
->
-            <div className="flex items-center justify-between">
-  <span className="font-semibold">
-    {property.name}
-  </span>
-
-  <svg
-    className="h-3 w-3 text-slate-400 transition-transform group-hover:translate-x-0.5"
-    viewBox="0 0 24 24"
-    fill="none"
-  >
-    <path
-      d="M7 17L17 7M17 7H9M17 7V15"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    />
-  </svg>
-</div>
-
-            <div className="text-sm text-slate-500">
-              {property.startingPrice}
+                          <svg
+                            viewBox="0 0 20 20"
+                            className="h-4 w-4 shrink-0 text-slate-400 transition-transform group-hover:translate-x-1"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="1.6"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            aria-hidden="true"
+                          >
+                            <path d="M4 10h12M10 4l6 6-6 6" />
+                          </svg>
+                        </Link>
+                      ))}
+                    </div>
+                  </section>
+                )}
+              </div>
             </div>
-          </Link>
-        )
-      )}
 
-    </div>
-
-  </div>
-    )}
           </div>
         </div>
 
