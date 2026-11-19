@@ -2406,6 +2406,6 @@ export const properties: Property[] = [
     value: "G+23",
   },
 ],
-    image: "/properties/ats-marigold.jpg",
+    image: "/properties/ats-marigold.webp",
   },
 ];
