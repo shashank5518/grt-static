@@ -469,7 +469,7 @@ export const properties: Property[] = [
     image: "/properties/privy-at4.jpg",
   },
   {
-    id: 9,
+    id: 6,
     slug: "emaar-palm-hills",
     name: "Emaar Palm Hills",
     developer: "Emaar India",
@@ -545,7 +545,7 @@ export const properties: Property[] = [
     image: "/properties/palm-hills.avif",
   },
   {
-    id: 25,
+    id: 7,
     slug: "emaar-palm-heights",
     name: "Emaar Palm Heights",
     developer: "Emaar India",
@@ -691,7 +691,7 @@ export const properties: Property[] = [
     image: "/properties/palm-gardens.jpg",
   },
   {
-    id: 6,
+    id: 9,
     slug: "ss-coralwood",
     name: "SS The Coralwood",
     developer: "SS Group",
@@ -2141,7 +2141,7 @@ export const properties: Property[] = [
     image: "/properties/county.webp",
   },
   {
-    id: 7,
+    id: 25,
     slug: "godrej-air",
     name: "Godrej Air",
     developer: "Godrej",
