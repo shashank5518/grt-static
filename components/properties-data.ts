@@ -470,228 +470,6 @@ export const properties: Property[] = [
   },
   {
     id: 6,
-    slug: "emaar-palm-hills",
-    name: "Emaar Palm Hills",
-    developer: "Emaar India",
-    location: "Sector 77, Gurgaon",
-    tag: "Ready to Move",
-    tagColor: "bg-emerald-100 text-emerald-700",
-    startingPrice: "₹1.9 Cr Onwards",
-    amenities: [
-  "Swimming Pool",
-"Gymnasium",
-"Club House",
-"Creche/Day Care",
-"Children's Play Area",
-"Landscape Garden",
-"Park",
-"Banquet Hall",
-"Jogging Track",
-  "Shopping Complex",
-],
-    configurations: [
-      {
-        bhk: "3 BHK + Servant Room",
-        options: [
-          {
-            size: "1450 sq ft",
-            price: "₹1.90 - 1.95 Cr",
-            floorPlan : "/floorplans/emaar-palm-hills-1450.webp"
-          },
-          {
-            size: "1575 sq ft",
-            price: "₹2.10 - 2.15 Cr",
-            floorPlan : "/floorplans/emaar-palm-hills-1575.webp"
-          }
-        ]
-      },
-      {
-        bhk: "4 BHK + Servant Room",
-        options: [
-          {
-            size: "1950 sq ft",
-            price: "₹2.55 - 2.60 Cr",
-            floorPlan : "/floorplans/emaar-palm-hills-1950.webp"
-          }
-        ]
-      },
-    ],
-    highlights: [
-  {
-    label: "Total Towers",
-    value: "4 Towers",
-  },
-  {
-    label: "Total Units",
-    value: "800+ Units",
-  },
-  {
-    label: "Land Bank",
-    value: "30 Acres",
-  },
-  {
-    label: "Possession",
-    value: "Ready To Move",
-  },
-  {
-    label: "RERA Status",
-    value: "Approved",
-  },
-  {
-    label: "Floors",
-    value: "G+13",
-  },
-],
-    image: "/properties/palm-hills.avif",
-  },
-  {
-    id: 7,
-    slug: "emaar-palm-heights",
-    name: "Emaar Palm Heights",
-    developer: "Emaar India",
-    location: "Sector 77, Gurgaon",
-    tag: "Ready to Move",
-    tagColor: "bg-emerald-100 text-emerald-700",
-    startingPrice: "₹2.6 Cr Onwards",
-    amenities: [
-  "Swimming Pool",
-"Gymnasium",
-"Club House",
-"Creche/Day Care",
-"Children's Play Area",
-"Landscape Garden",
-"Park",
-"Banquet Hall",
-"Jogging Track",
-],
-    configurations: [
-      {
-        bhk: "3 BHK + Servant Room",
-        options: [
-          {
-            size: "2000 sq ft",
-            price: "₹2.60 - 2.65 Cr",
-            floorPlan : "/floorplans/emaar-palm-heights-2000.webp"
-          },
-          {
-            size: "2025 sq ft",
-            price: "₹2.70 - 2.75 Cr",
-            floorPlan : "/floorplans/emaar-palm-heights-2025.webp"
-          }
-        ]
-      },
-    ],
-    highlights: [
-  {
-    label: "Total Towers",
-    value: "3 Towers",
-  },
-  {
-    label: "Total Units",
-    value: "300 Units",
-  },
-  {
-    label: "Land Bank",
-    value: "30 Acres",
-  },
-  {
-    label: "Possession",
-    value: "Ready To Move",
-  },
-  {
-    label: "RERA Status",
-    value: "Approved",
-  },
-  {
-    label: "Floors",
-    value: "G+24",
-  },
-],
-    image: "/properties/palm-heights.jpg",
-  },
-  {
-    id: 8,
-    slug: "emaar-palm-gardens",
-    name: "Emaar Palm Gardens",
-    developer: "Emaar India",
-    location: "Sector 83, Gurgaon",
-    tag: "Ready to Move",
-    tagColor: "bg-emerald-100 text-emerald-700",
-    startingPrice: "₹2.1 Cr onwards",
-    amenities: [
-      "Swimming Pool",
-"Gymnasium",
-"Club House",
-"Golf Course",
-"Creche/Day Care",
-"Children's Play Area",
-"EV Charging Stations",
-"Landscape Garden",
-"Park",
-"Mini Golf Course",
-],
-    configurations: [
-      {
-        bhk: "3 BHK + Servant Room",
-        options: [
-          {
-            size: "1720 sq ft",
-            price: "₹2.15 - 2.20 Cr",
-            floorPlan : "/floorplans/emaar-palm-gardens-1720.webp"
-          },
-          {
-            size: "1850 sq ft",
-            price: "₹2.35 - 2.40 Cr",
-            floorPlan : "/floorplans/emaar-palm-gardens-1850"
-          },
-          {
-            size: "1900 sq ft",
-            price: "₹2.60 - 2.65 Cr",
-            floorPlan : "/floorplans/emaar-palm-gardens-1900"
-          }
-        ]
-      },
-      {
-        bhk: "5 BHK Villa",
-        options: [
-          {
-            size: "3750 sq ft",
-            price: "₹4.55 - 4.60 Cr",
-            floorPlan : "/floorplans/emaar-palm-gardens-3750.webp"
-          }
-        ]
-      },
-    ],
-    highlights: [
-  {
-    label: "Total Towers",
-    value: "12 Towers",
-  },
-  {
-    label: "Total Units",
-    value: "1000+ Units",
-  },
-  {
-    label: "Land Bank",
-    value: "23 Acres",
-  },
-  {
-    label: "Possession",
-    value: "Ready To Move",
-  },
-  {
-    label: "RERA Status",
-    value: "Approved",
-  },
-  {
-    label: "Floors",
-    value: "G+16",
-  },
-],
-    image: "/properties/palm-gardens.jpg",
-  },
-  {
-    id: 9,
     slug: "ss-coralwood",
     name: "SS The Coralwood",
     developer: "SS Group",
@@ -776,7 +554,99 @@ export const properties: Property[] = [
     image: "/properties/ss-coralwood.webp",
   },
   {
-    id: 10,
+    id: 7,
+    slug: "godrej-air",
+    name: "Godrej Air",
+    developer: "Godrej",
+    location: "Sector 85, Gurgaon",
+    tag: "Ready to Move",
+    tagColor: "bg-emerald-100 text-emerald-700",
+    startingPrice: "₹1.85 Cr Onwards",
+    amenities: [
+      "Centralized Air Filtration Units",
+      "Dedicated Green Areas",
+      "Swimming Pool",
+"Gymnasium",
+"Club House",
+"Mini Theatre",
+"Creche/Day Care",
+"Children's Play Area",
+"Terrace Garden",
+"Park",
+"Banquet Hall",
+],
+    configurations: [
+      {
+        bhk: "2 BHK",
+        options: [
+          {
+            size: "1426 sq ft",
+            price: "₹1.90 - 1.95 Cr",
+            floorPlan : "/floorplans/godrej-air-1400.webp"
+          },
+        ]
+      },
+      {
+        bhk: "3 BHK",
+        options: [
+          {
+            size: "1829 sq ft",
+            price: "₹2.50 - 2.60 Cr",
+            floorPlan : "/floorplans/godrej-air-1830.webp"
+          },
+        ]
+      },
+      {
+        bhk: "3 BHK + Servant Room",
+        options: [
+          {
+            size: "2129 sq ft",
+            price: "₹2.90 - 3.00 Cr",
+            floorPlan : "/floorplans/godrej-air-2130.webp"
+          },
+        ]
+      },
+      {
+        bhk: "4 BHK + Servant Room",
+        options: [
+          {
+            size: "2599 sq ft",
+            price: "₹3.55 - 3.65 Cr",
+            floorPlan : "/floorplans/godrej-air-2600.webp"
+          },
+        ]
+      },
+    ],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "5 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "600 Units",
+  },
+  {
+    label: "Land Bank",
+    value: "10.04 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready to Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+32",
+  },
+],
+    image: "/properties/godrej-air.webp",
+  },
+  {
+    id: 8,
     slug: "ss-leaf",
     name: "SS The Leaf",
     developer: "SS Group",
@@ -892,7 +762,7 @@ export const properties: Property[] = [
     image: "/properties/ss-leaf.avif",
   },
   {
-    id: 11,
+    id: 9,
     slug: "gurgaon-one",
     name: "Gurgaon One",
     developer: "Alpha Corp Group",
@@ -992,7 +862,7 @@ export const properties: Property[] = [
     image: "/properties/gurgaon-one-84.jpg",
   },
   {
-    id: 12,
+    id: 10,
     slug: "dlf-the-primus",
     name: "DLF The Primus",
     developer: "DLF",
@@ -1087,7 +957,7 @@ export const properties: Property[] = [
     image: "/properties/dlf-primus.webp",
   },
   {
-    id: 13,
+    id: 11,
     slug: "dlf-the-ultima",
     name: "DLF The Ultima",
     developer: "DLF",
@@ -1157,7 +1027,7 @@ export const properties: Property[] = [
     image: "/properties/dlf-ultima.webp",
   },
   {
-    id: 14,
+    id: 12,
     slug: "dlf-the-skycourt",
     name: "DLF The Skycourt",
     developer: "DLF",
@@ -1217,7 +1087,7 @@ export const properties: Property[] = [
     image: "/properties/dlf-skycourt.webp",
   },
   {
-    id: 15,
+    id: 13,
     slug: "dlf-regal-gardens",
     name: "DLF Regal Gardens",
     developer: "DLF",
@@ -1327,7 +1197,7 @@ export const properties: Property[] = [
     image: "/properties/dlf-regal-gardens.webp",
   },
   {
-    id: 16,
+    id: 14,
     slug: "dlf-new-town-heights-1",
     name: "DLF New Town Heights 1",
     developer: "DLF",
@@ -1412,7 +1282,7 @@ export const properties: Property[] = [
     image: "/properties/dlf-new-town-heights-1.avif",
   },
   {
-    id: 17,
+    id: 15,
     slug: "dlf-new-town-heights-2",
     name: "DLF New Town Heights 2",
     developer: "DLF",
@@ -1512,7 +1382,7 @@ export const properties: Property[] = [
     image: "/properties/dlf-new-town-heights-2.avif",
   },
   {
-    id: 18,
+    id: 16,
     slug: "dlf-new-town-heights-3",
     name: "DLF New Town Heights 3",
     developer: "DLF",
@@ -1611,7 +1481,7 @@ export const properties: Property[] = [
     image: "/properties/dlf-new-town-heights-3.webp",
   },
   {
-    id: 19,
+    id: 17,
     slug: "bestech-altura",
     name: "Bestech Park View Altura",
     developer: "Bestech Group",
@@ -1696,7 +1566,7 @@ export const properties: Property[] = [
     image: "/properties/bestech-altura.avif",
   },
   {
-    id: 20,
+    id: 18,
     slug: "bestech-grand-spa",
     name: "Bestech Park View Grand Spa",
     developer: "Bestech Group",
@@ -1786,7 +1656,7 @@ export const properties: Property[] = [
     image: "/properties/grand-spa.avif",
   },
   {
-    id: 21,
+    id: 19,
     slug: "bestech-sanskruti",
     name: "Bestech Park View Sanskruti",
     developer: "Bestech Group",
@@ -1876,7 +1746,7 @@ export const properties: Property[] = [
     image: "/properties/sanskruti.webp",
   },
   {
-    id: 22,
+    id: 20,
     slug: "bestech-ananda",
     name: "Bestech Park View Ananda",
     developer: "Bestech Group",
@@ -1976,7 +1846,7 @@ export const properties: Property[] = [
     image: "/properties/ananda.webp",
   },
   {
-    id: 23,
+    id: 21,
     slug: "microtek-greenburg",
     name: "Microtek Greenburg",
     developer: "Microtek Infra",
@@ -2061,7 +1931,7 @@ export const properties: Property[] = [
     image: "/properties/greenburg.avif",
   },
   {
-    id: 24,
+    id: 22,
     slug: "county-center-court",
     name: "County The Center Court",
     developer: "County Group",
@@ -2141,99 +2011,7 @@ export const properties: Property[] = [
     image: "/properties/county.webp",
   },
   {
-    id: 25,
-    slug: "godrej-air",
-    name: "Godrej Air",
-    developer: "Godrej",
-    location: "Sector 85, Gurgaon",
-    tag: "Ready to Move",
-    tagColor: "bg-emerald-100 text-emerald-700",
-    startingPrice: "₹1.85 Cr Onwards",
-    amenities: [
-      "Centralized Air Filtration Units",
-      "Dedicated Green Areas",
-      "Swimming Pool",
-"Gymnasium",
-"Club House",
-"Mini Theatre",
-"Creche/Day Care",
-"Children's Play Area",
-"Terrace Garden",
-"Park",
-"Banquet Hall",
-],
-    configurations: [
-      {
-        bhk: "2 BHK",
-        options: [
-          {
-            size: "1426 sq ft",
-            price: "₹1.90 - 1.95 Cr",
-            floorPlan : "/floorplans/godrej-air-1400.webp"
-          },
-        ]
-      },
-      {
-        bhk: "3 BHK",
-        options: [
-          {
-            size: "1829 sq ft",
-            price: "₹2.50 - 2.60 Cr",
-            floorPlan : "/floorplans/godrej-air-1830.webp"
-          },
-        ]
-      },
-      {
-        bhk: "3 BHK + Servant Room",
-        options: [
-          {
-            size: "2129 sq ft",
-            price: "₹2.90 - 3.00 Cr",
-            floorPlan : "/floorplans/godrej-air-2130.webp"
-          },
-        ]
-      },
-      {
-        bhk: "4 BHK + Servant Room",
-        options: [
-          {
-            size: "2599 sq ft",
-            price: "₹3.55 - 3.65 Cr",
-            floorPlan : "/floorplans/godrej-air-2600.webp"
-          },
-        ]
-      },
-    ],
-    highlights: [
-  {
-    label: "Total Towers",
-    value: "5 Towers",
-  },
-  {
-    label: "Total Units",
-    value: "600 Units",
-  },
-  {
-    label: "Land Bank",
-    value: "10.04 Acres",
-  },
-  {
-    label: "Possession",
-    value: "Ready to Move",
-  },
-  {
-    label: "RERA Status",
-    value: "Approved",
-  },
-  {
-    label: "Floors",
-    value: "G+32",
-  },
-],
-    image: "/properties/godrej-air.webp",
-  },
-  {
-    id: 26,
+    id: 23,
     slug: "orris-greenopolis",
     name: "Orris Greenopolis",
     developer: "Orris Group",
@@ -2326,5 +2104,227 @@ export const properties: Property[] = [
   },
 ],
     image: "/properties/greenopolis.webp",
+  },
+  {
+    id: 24,
+    slug: "emaar-palm-hills",
+    name: "Emaar Palm Hills",
+    developer: "Emaar India",
+    location: "Sector 77, Gurgaon",
+    tag: "Ready to Move",
+    tagColor: "bg-emerald-100 text-emerald-700",
+    startingPrice: "₹1.9 Cr Onwards",
+    amenities: [
+  "Swimming Pool",
+"Gymnasium",
+"Club House",
+"Creche/Day Care",
+"Children's Play Area",
+"Landscape Garden",
+"Park",
+"Banquet Hall",
+"Jogging Track",
+  "Shopping Complex",
+],
+    configurations: [
+      {
+        bhk: "3 BHK + Servant Room",
+        options: [
+          {
+            size: "1450 sq ft",
+            price: "₹1.90 - 1.95 Cr",
+            floorPlan : "/floorplans/emaar-palm-hills-1450.webp"
+          },
+          {
+            size: "1575 sq ft",
+            price: "₹2.10 - 2.15 Cr",
+            floorPlan : "/floorplans/emaar-palm-hills-1575.webp"
+          }
+        ]
+      },
+      {
+        bhk: "4 BHK + Servant Room",
+        options: [
+          {
+            size: "1950 sq ft",
+            price: "₹2.55 - 2.60 Cr",
+            floorPlan : "/floorplans/emaar-palm-hills-1950.webp"
+          }
+        ]
+      },
+    ],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "4 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "800+ Units",
+  },
+  {
+    label: "Land Bank",
+    value: "30 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+13",
+  },
+],
+    image: "/properties/palm-hills.avif",
+  },
+{
+    id: 25,
+    slug: "emaar-palm-heights",
+    name: "Emaar Palm Heights",
+    developer: "Emaar India",
+    location: "Sector 77, Gurgaon",
+    tag: "Ready to Move",
+    tagColor: "bg-emerald-100 text-emerald-700",
+    startingPrice: "₹2.6 Cr Onwards",
+    amenities: [
+  "Swimming Pool",
+"Gymnasium",
+"Club House",
+"Creche/Day Care",
+"Children's Play Area",
+"Landscape Garden",
+"Park",
+"Banquet Hall",
+"Jogging Track",
+],
+    configurations: [
+      {
+        bhk: "3 BHK + Servant Room",
+        options: [
+          {
+            size: "2000 sq ft",
+            price: "₹2.60 - 2.65 Cr",
+            floorPlan : "/floorplans/emaar-palm-heights-2000.webp"
+          },
+          {
+            size: "2025 sq ft",
+            price: "₹2.70 - 2.75 Cr",
+            floorPlan : "/floorplans/emaar-palm-heights-2025.webp"
+          }
+        ]
+      },
+    ],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "3 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "300 Units",
+  },
+  {
+    label: "Land Bank",
+    value: "30 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+24",
+  },
+],
+    image: "/properties/palm-heights.jpg",
+  },
+{
+    id: 26,
+    slug: "emaar-palm-gardens",
+    name: "Emaar Palm Gardens",
+    developer: "Emaar India",
+    location: "Sector 83, Gurgaon",
+    tag: "Ready to Move",
+    tagColor: "bg-emerald-100 text-emerald-700",
+    startingPrice: "₹2.1 Cr onwards",
+    amenities: [
+      "Swimming Pool",
+"Gymnasium",
+"Club House",
+"Golf Course",
+"Creche/Day Care",
+"Children's Play Area",
+"EV Charging Stations",
+"Landscape Garden",
+"Park",
+"Mini Golf Course",
+],
+    configurations: [
+      {
+        bhk: "3 BHK + Servant Room",
+        options: [
+          {
+            size: "1720 sq ft",
+            price: "₹2.15 - 2.20 Cr",
+            floorPlan : "/floorplans/emaar-palm-gardens-1720.webp"
+          },
+          {
+            size: "1850 sq ft",
+            price: "₹2.35 - 2.40 Cr",
+            floorPlan : "/floorplans/emaar-palm-gardens-1850"
+          },
+          {
+            size: "1900 sq ft",
+            price: "₹2.60 - 2.65 Cr",
+            floorPlan : "/floorplans/emaar-palm-gardens-1900"
+          }
+        ]
+      },
+      {
+        bhk: "5 BHK Villa",
+        options: [
+          {
+            size: "3750 sq ft",
+            price: "₹4.55 - 4.60 Cr",
+            floorPlan : "/floorplans/emaar-palm-gardens-3750.webp"
+          }
+        ]
+      },
+    ],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "12 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "1000+ Units",
+  },
+  {
+    label: "Land Bank",
+    value: "23 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+16",
+  },
+],
+    image: "/properties/palm-gardens.jpg",
   },
 ];
