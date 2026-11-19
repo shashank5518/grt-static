@@ -2246,7 +2246,7 @@ export const properties: Property[] = [
 ],
     image: "/properties/palm-heights.jpg",
   },
-{
+  {
     id: 26,
     slug: "emaar-palm-gardens",
     name: "Emaar Palm Gardens",
@@ -2326,5 +2326,86 @@ export const properties: Property[] = [
   },
 ],
     image: "/properties/palm-gardens.jpg",
+  },
+  {
+    id: 27,
+    slug: "ats-marigold",
+    name: "ATS Marigold",
+    developer: "ATS Group",
+    location: "Sector 89 A, Gurgaon",
+    tag: "Ready to Move",
+    tagColor: "bg-emerald-100 text-emerald-700",
+    startingPrice: "₹2.25 Cr onwards",
+    amenities: [
+      "Swimming Pool",
+"Gymnasium",
+"Club House",
+"Creche/Day Care",
+"Children's Play Area",
+"Jogging Track",
+"Basketball Court",
+"Shopping Centre",
+"Spanish Architecture",
+"Park",
+],
+    configurations: [
+      {
+        bhk: "3 BHK",
+        options: [
+          {
+            size: "1750 sq ft",
+            price: "₹2.25 - 2.30 Cr",
+            floorPlan : "/floorplans/ats-marigold-1750.webp"
+          }
+        ]
+      },
+      {
+        bhk: "3 BHK + Servant Room",
+        options: [
+          {
+            size: "2150 sq ft",
+            price: "₹2.75 - 2.80 Cr",
+            floorPlan : "/floorplans/ats-marigold-2150.webp"
+          },
+        ]
+      },
+      {
+        bhk: "3 BHK + Lounge + Servant Room",
+        options: [
+          {
+            size: "2650 sq ft",
+            price: "₹3.35 - 3.40 Cr",
+            floorPlan : "/floorplans/ats-marigold-2650.webp"
+          }
+        ]
+      },
+    ],
+    highlights: [
+  {
+    label: "Total Towers",
+    value: "6 Towers",
+  },
+  {
+    label: "Total Units",
+    value: "400+ Units",
+  },
+  {
+    label: "Land Bank",
+    value: "11 Acres",
+  },
+  {
+    label: "Possession",
+    value: "Ready To Move",
+  },
+  {
+    label: "RERA Status",
+    value: "Approved",
+  },
+  {
+    label: "Floors",
+    value: "G+23",
+  },
+],
+    image: "/properties/ats-marigold.jpg",
   },
 ];
