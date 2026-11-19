@@ -56,15 +56,15 @@ export function FloorPlansSection({
           {/* Top controls */}
 <div
   className="
-    flex flex-wrap items-end gap-4
-    border-b border-slate-100
-    px-6 py-5
-  "
+  grid grid-cols-1 sm:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)]
+  gap-4
+  border-b border-slate-100
+  px-6 py-5
+"
 >
 
   {/* Configuration */}
-  <div className="w-full sm:w-[220px]">
-
+<div className="min-w-0 w-full">
     <p className="mb-2 text-xs font-semibold tracking-[0.14em] text-slate-400">
       CONFIGURATION
     </p>
@@ -84,8 +84,13 @@ export function FloorPlansSection({
       }}
     >
 
-      <SelectTrigger className="h-12 rounded-2xl border border-slate-200 bg-white px-5 text-sm font-semibold shadow-sm transition-all hover:border-slate-300 focus:ring-2 focus:ring-slate-200">
-        <SelectValue placeholder="Choose configuration" />
+      <SelectTrigger className="flex h-12 w-full min-w-0 overflow-hidden
+  rounded-2xl border border-slate-200
+  bg-white px-4 text-sm font-semibold
+  shadow-sm transition-all
+  hover:border-slate-300
+  focus:ring-2 focus:ring-slate-200">
+        <SelectValue placeholder="Choose configuration" className="truncate" />
       </SelectTrigger>
 
       <SelectContent className="rounded-2xl border border-slate-200 bg-white/95 backdrop-blur-xl shadow-2xl">
@@ -103,7 +108,7 @@ export function FloorPlansSection({
   </div>
 
   {/* Size */}
-  <div className="w-full sm:w-[220px]">
+  <div className="min-w-0 w-full">
 
     <p className="mb-2 text-xs font-semibold tracking-[0.14em] text-slate-400">
       SIZE
@@ -114,8 +119,13 @@ export function FloorPlansSection({
       onValueChange={setActivePlan}
     >
 
-      <SelectTrigger className="h-12 rounded-2xl border border-slate-200 bg-white px-5 text-sm font-semibold shadow-sm transition-all hover:border-slate-300 focus:ring-2 focus:ring-slate-200">
-        <SelectValue placeholder="Choose size" />
+      <SelectTrigger className="flex h-12 w-full min-w-0 overflow-hidden
+  rounded-2xl border border-slate-200
+  bg-white px-4 text-sm font-semibold
+  shadow-sm transition-all
+  hover:border-slate-300
+  focus:ring-2 focus:ring-slate-200">
+        <SelectValue placeholder="Choose size" className="truncate" />
       </SelectTrigger>
 
       <SelectContent className="rounded-2xl border border-slate-200 bg-white/95 backdrop-blur-xl shadow-2xl">

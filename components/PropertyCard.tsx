@@ -173,7 +173,7 @@ const priceToShow =
         data-[state=open]:border-(--brand-700)
       "
     >
-      <SelectValue placeholder="Choose BHK type" />
+      <SelectValue placeholder="Choose configuration" />
     </SelectTrigger>
 
     <SelectContent
@@ -221,7 +221,7 @@ const priceToShow =
           data-[state=open]:border-(--brand-700)
         "
       >
-        <SelectValue placeholder="Choose apartment size" />
+        <SelectValue placeholder="Choose size" />
       </SelectTrigger>
 
       <SelectContent
